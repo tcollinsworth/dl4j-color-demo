@@ -1,0 +1,78 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>AI Demo</title>
+    <meta name="description" content="AI Demo">
+    <meta name="author" content="Troy Collinsworth">
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <hr>
+    <div id="testColorParent">
+      <div class="description">
+        Displays random color and AI/Neural Net classification.<br>
+        Select the correct color and click next to train the model.<br>
+        Your responses are randomly assigned as training or validation.<br>
+        Incorrect responsed will be learned/validated, too.<br>
+        Utilizes a windowed FIFO, so occasional incorrect classifications will decay.<br>
+        Validation occurs every 10 responses.<br>
+        Requests are serialized in this test/demo.<br>
+      </div>
+      <div id="testColor"></div>
+      <div>
+        <div id="whiteSample" class="colorSample"></div>
+        <input type="radio" id="white" name="color" value="white">
+        <label for="white">white</label><br>
+        <div id="greySample" class="colorSample"></div>
+        <input type="radio" id="grey" name="color" value="grey">
+        <label for="grey">grey</label><br>
+        <div id="blackSample" class="colorSample"></div>
+        <input type="radio" id="black" name="color" value="black">
+        <label for="black">black</label><br>
+        <div id="brownSample" class="colorSample"></div>
+        <input type="radio" id="brown" name="color" value="brown">
+        <label for="brown">brown</label><br>
+        <div id="redSample" class="colorSample"></div>
+        <input type="radio" id="red" name="color" value="red">
+        <label for="red">red</label><br>
+        <div id="orangeSample" class="colorSample"></div>
+        <input type="radio" id="orange" name="color" value="orange">
+        <label for="orange">orange</label><br>
+        <div id="yellowSample" class="colorSample"></div>
+        <input type="radio" id="yellow" name="color" value="yellow">
+        <label for="yellow">yellow</label><br>
+        <div id="greenSample" class="colorSample"></div>
+        <input type="radio" id="green" name="color" value="green">
+        <label for="green">green</label><br>
+        <div id="blueSample" class="colorSample"></div>
+        <input type="radio" id="blue" name="color" value="blue">
+        <label for="blue">blue</label><br>
+        <div id="violetSample" class="colorSample"></div>
+        <input type="radio" id="violet" name="color" value="violet">
+        <label for="violet">violet</label><br>
+        <div id="pinkSample" class="colorSample"></div>
+        <input type="radio" id="pink" name="color" value="pink">
+        <label for="pink">pink</label><br>
+        <button id="testColorSubmit" type="button">Next</button>
+      </div>
+      <div>
+        <ul>
+          <li>Inference <span id="inference">0.824321</span> ms</li>
+          <li>Accuracy <span id="accuracy">0.1</span></li>
+          <li>Precision <span id="precision">0.1</span></li>
+          <li>Recall <span id="recall">0.1</span></li>
+          <li>F1 Score <span id="f1score">0.1</span></li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+    <script src="config.js"></script>
+    <script src="colors.js"></script>
+  </body>
+</html>

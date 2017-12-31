@@ -1,0 +1,69 @@
+
+#testColorParent {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.description {
+  page-break-after: always;
+  flex-basis: 100%;
+}
+
+#testColor {
+  border: 1px solid black;
+  background-color: rgb(255,255,255);
+  width: 255px;
+  height: 255px;
+  float: left;
+}
+
+#testColorSubmit {
+  margin-left: 1em;
+  float: left;
+}
+
+#testColorSubmit {
+  margin-top: 1em;
+}
+
+.colorSample {
+  border: 1px solid black;
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+}
+
+#blackSample {
+  background-color: black;
+}
+#brownSample {
+  background-color: rgb(97, 59, 14);
+}
+#redSample {
+  background-color: red;
+}
+#orangeSample {
+  background-color: orange;
+}
+#yellowSample {
+  background-color: yellow;
+}
+#greenSample {
+  background-color: green;
+}
+#blueSample {
+  background-color: blue;
+}
+#violetSample {
+  background-color: rgb(148, 66, 228);
+}
+#pinkSample {
+  background-color: rgb(250, 200, 245);
+}
+#greySample {
+  background-color: grey;
+}
+#whiteSample {
+  background-color: white;
+}

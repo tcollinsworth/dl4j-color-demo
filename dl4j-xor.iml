@@ -1,0 +1,1412 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module relativePaths="true" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output/>
+    <orderEntry type="inheritedJdk"/>
+    <content url="file://$MODULE_DIR$/">
+      <sourceFolder url="file://$MODULE_DIR$/src/main/resources" isTestSource="false"/>
+      <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false"/>
+      <sourceFolder url="file://$MODULE_DIR$/src/test/resources" isTestSource="true"/>
+      <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true"/>
+      <excludeFolder url="file://$MODULE_DIR$/build"/>
+      <excludeFolder url="file://$MODULE_DIR$/.gradle"/>
+    </content>
+    <orderEntry type="sourceFolder" forTests="false"/>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.deeplearning4j/deeplearning4j-core/0.9.1/a91d6a7ee5ec724e975bfa10df59f91ded5eb872/deeplearning4j-core-0.9.1.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.deeplearning4j/deeplearning4j-core/0.9.1/830a63bfc33d30fbcfed6eedabdeade2b065f2b5/deeplearning4j-core-0.9.1-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.deeplearning4j/deeplearning4j-core/0.9.1/114bf2280b90e4bae268c07d8449fea008c8cd55/deeplearning4j-core-0.9.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.nd4j/nd4j-native-platform/0.9.1/952a27987f4fea4ba3a2547551fcc5e31c595c37/nd4j-native-platform-0.9.1.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.nd4j/nd4j-native-platform/0.9.1/952a27987f4fea4ba3a2547551fcc5e31c595c37/nd4j-native-platform-0.9.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.datavec/datavec-api/0.9.1/72c5afdf4d75a2b654631416bad324436081f3b/datavec-api-0.9.1.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.datavec/datavec-api/0.9.1/694cbb93f405179651840456789469f01ea36507/datavec-api-0.9.1-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.datavec/datavec-api/0.9.1/ebe7a944e7ef267be11c537e3c8e63f3d39c43ec/datavec-api-0.9.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-classic/1.2.3/7c4f3c474fb2c041d8028740440937705ebb473a/logback-classic-1.2.3.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-classic/1.2.3/99b0433b7d86044643b7d677f22d2c793d31d416/logback-classic-1.2.3-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-classic/1.2.3/cfd5385e0c5ed1c8a5dce57d86e79cf357153a64/logback-classic-1.2.3-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.deeplearning4j/nearestneighbor-core/0.9.1/8abc22340743b31253a0120f632492bad49ca711/nearestneighbor-core-0.9.1.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.deeplearning4j/nearestneighbor-core/0.9.1/22d233e60c03de1d31aa23f4986b8ece1e407013/nearestneighbor-core-0.9.1-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.deeplearning4j/nearestneighbor-core/0.9.1/b74dee84429610f0bc71cf482953d3291df1ddd0/nearestneighbor-core-0.9.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.deeplearning4j/deeplearning4j-modelimport/0.9.1/62d6ab649e34c94fafb2df8e0dd5aa2e9699e54c/deeplearning4j-modelimport-0.9.1.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.deeplearning4j/deeplearning4j-modelimport/0.9.1/996bb9ebceb937c360e81c2d428888cac4561edd/deeplearning4j-modelimport-0.9.1-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.deeplearning4j/deeplearning4j-modelimport/0.9.1/3220584966bad5a2d6d54f51bdd1968c7827c9ad/deeplearning4j-modelimport-0.9.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.deeplearning4j/deeplearning4j-nn/0.9.1/e4f9dd017e953f68209667613a9cb1710edae34/deeplearning4j-nn-0.9.1.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.deeplearning4j/deeplearning4j-nn/0.9.1/84b1410fb939355a656d5e731d89cfae40c17470/deeplearning4j-nn-0.9.1-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.deeplearning4j/deeplearning4j-nn/0.9.1/b5fd35629948936731ae321e7f2061f1e7bf6ed6/deeplearning4j-nn-0.9.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-math3/3.4.1/3ac44a8664228384bc68437264cf7c4cf112f579/commons-math3-3.4.1.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-math3/3.4.1/6c24d9ead23b12740db01e9c13cf87fd407e34d1/commons-math3-3.4.1-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-math3/3.4.1/975c1f46d8df327af57892ea4787007f31d2066b/commons-math3-3.4.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.4/b1b6ea3b7e4aa4f492509a4952029cd8e48019ad/commons-io-2.4.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.4/3b5b0183c509963d5ffdf0d9d452a4a7521aeaa3/commons-io-2.4-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.4/f2d8698c46d1167ff24b06a840a87d91a02db891/commons-io-2.4-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/20.0/89507701249388e1ed5ddcf8c41f4ce1be7831ef/guava-20.0.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/20.0/fcf063ba2bcd1f6866d09feeef65a181bf32da0d/guava-20.0-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/20.0/9c8493c7991464839b612d7547d6c263adf08f75/guava-20.0-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.nd4j/nd4j-api/0.9.1/781bbeed71ef40b902c4b8076c7a2fc937f85160/nd4j-api-0.9.1.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.nd4j/nd4j-api/0.9.1/429d5fbe64ebb19855e3044b9d091c81e8b18f5f/nd4j-api-0.9.1-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.nd4j/nd4j-api/0.9.1/54e4a92c130f12fd70d78511f0713ea70e517ee5/nd4j-api-0.9.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.4/5fe28b9518e58819180a43a850fbc0dd24b7c050/commons-lang3-3.4.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.4/75412eddcd8c9f4d338e09966b6df2f01c7df9ff/commons-lang3-3.4-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.4/b49dafc9cfef24c356827f322e773e7c26725dd2/commons-lang3-3.4-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.nd4j/jackson/0.9.1/e457a1d6897967fb4a7551824549fed587a57f62/jackson-0.9.1.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.nd4j/jackson/0.9.1/375d219262ec6500e1c5e99e94523566944d905a/jackson-0.9.1-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.nd4j/jackson/0.9.1/a1c567047d317459e2de973b8c46337cc89b04f2/jackson-0.9.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.16.16/245b50f714bf89ed7659266ace12f9e509d13551/lombok-1.16.16.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.16.16/c993689858853337f1ca32a17cf32905e4b3aaa9/lombok-1.16.16-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.16.16/c4b112e9645070ac05946084317cc5d01cf4ddcd/lombok-1.16.16-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.datavec/datavec-data-image/0.9.1/d9e48c7c9248540069210630a13925ae4504ee8c/datavec-data-image-0.9.1.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.datavec/datavec-data-image/0.9.1/7b849e194df6ea3495e9d99a92923242c07f2f0/datavec-data-image-0.9.1-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.datavec/datavec-data-image/0.9.1/6c8893d10ec62a05f7cb6ad3b2c75596756d25a5/datavec-data-image-0.9.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.deeplearning4j/deeplearning4j-ui-components/0.9.1/c02b15e57a0a6132f9c5759ccb03bd728c5aec4d/deeplearning4j-ui-components-0.9.1.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.deeplearning4j/deeplearning4j-ui-components/0.9.1/8ad38921e6f768ba147df1b835494a3cea01a345/deeplearning4j-ui-components-0.9.1-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.deeplearning4j/deeplearning4j-ui-components/0.9.1/a70c0f90cff21a1fbf37cc8605d9733e615b476f/deeplearning4j-ui-components-0.9.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.10/4b95f4897fa13f2cd904aee711aeafc0c5295cd8/commons-codec-1.10.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.10/8176f1eb181cde7c9e4b5290f0365652777b3b87/commons-codec-1.10-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.10/11fb3d88ae7e3b757d70237064210ceb954a5a04/commons-codec-1.10-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/openblas-platform/0.2.19-1.3/eab27eea89eabf1347c4263d91a7c1f9d05dc4f6/openblas-platform-0.2.19-1.3.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES/>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.nd4j/nd4j-native/0.9.1/d0d4e11141bccf1de588a6edb887c811a4b5ab79/nd4j-native-0.9.1.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.nd4j/nd4j-native/0.9.1/1cd5bb3c909e7b149a16d2955aeaa2b8f8ccca55/nd4j-native-0.9.1-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.nd4j/nd4j-native/0.9.1/b2ee18006d23b41f0830eb35dc77fd86b91bab32/nd4j-native-0.9.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.nd4j/nd4j-native/0.9.1/98cf23e416181df854dde539316dae2505a8911a/nd4j-native-0.9.1-android-arm.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.nd4j/nd4j-native/0.9.1/1cd5bb3c909e7b149a16d2955aeaa2b8f8ccca55/nd4j-native-0.9.1-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.nd4j/nd4j-native/0.9.1/b2ee18006d23b41f0830eb35dc77fd86b91bab32/nd4j-native-0.9.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.nd4j/nd4j-native/0.9.1/73604d40f4d414716375d579e7568f392d656c4f/nd4j-native-0.9.1-android-x86.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.nd4j/nd4j-native/0.9.1/1cd5bb3c909e7b149a16d2955aeaa2b8f8ccca55/nd4j-native-0.9.1-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.nd4j/nd4j-native/0.9.1/b2ee18006d23b41f0830eb35dc77fd86b91bab32/nd4j-native-0.9.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.nd4j/nd4j-native/0.9.1/dad24bde8da226270eb95dd922c8159ba336ae84/nd4j-native-0.9.1-linux-x86_64.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.nd4j/nd4j-native/0.9.1/1cd5bb3c909e7b149a16d2955aeaa2b8f8ccca55/nd4j-native-0.9.1-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.nd4j/nd4j-native/0.9.1/b2ee18006d23b41f0830eb35dc77fd86b91bab32/nd4j-native-0.9.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.nd4j/nd4j-native/0.9.1/c25d480129677653987292797de2aabc77ea0d7e/nd4j-native-0.9.1-macosx-x86_64.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.nd4j/nd4j-native/0.9.1/1cd5bb3c909e7b149a16d2955aeaa2b8f8ccca55/nd4j-native-0.9.1-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.nd4j/nd4j-native/0.9.1/b2ee18006d23b41f0830eb35dc77fd86b91bab32/nd4j-native-0.9.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.nd4j/nd4j-native/0.9.1/8b64d48fd90253fbec571488e964c9150fa08ff2/nd4j-native-0.9.1-windows-x86_64.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.nd4j/nd4j-native/0.9.1/1cd5bb3c909e7b149a16d2955aeaa2b8f8ccca55/nd4j-native-0.9.1-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.nd4j/nd4j-native/0.9.1/b2ee18006d23b41f0830eb35dc77fd86b91bab32/nd4j-native-0.9.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.nd4j/nd4j-native/0.9.1/5878a9a35728170ca6466ffbbe0636a429f26245/nd4j-native-0.9.1-linux-ppc64le.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.nd4j/nd4j-native/0.9.1/1cd5bb3c909e7b149a16d2955aeaa2b8f8ccca55/nd4j-native-0.9.1-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.nd4j/nd4j-native/0.9.1/b2ee18006d23b41f0830eb35dc77fd86b91bab32/nd4j-native-0.9.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/joda-time/joda-time/2.9.2/36d6e77a419cb455e6fd5909f6f96b168e21e9d0/joda-time-2.9.2.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/joda-time/joda-time/2.9.2/6a0f6a6bd6a0fa804e15eefccad77786edeffe29/joda-time-2.9.2-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/joda-time/joda-time/2.9.2/95a8bd67d07e893710325efd4edd94b91f0d6bbf/joda-time-2.9.2-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.freemarker/freemarker/2.3.23/cd143cd8c02a9f838e3cb75a6dfe133750437f6d/freemarker-2.3.23.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.freemarker/freemarker/2.3.23/9e727625898d8a36c4c51809ff5720d2a3b3ec4a/freemarker-2.3.23-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.freemarker/freemarker/2.3.23/51b98b3e60f2d78624137437f34a3e70ab5d55ec/freemarker-2.3.23-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.reflections/reflections/0.9.10/c7f4ea230aedc757ca1499ebcfb2953c81cf8b67/reflections-0.9.10.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.reflections/reflections/0.9.10/5787fbf43893c23777776a36127ab2a12bc6da4/reflections-0.9.10-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.reflections/reflections/0.9.10/606b8587dab0bf1776b896003f2a2fa0470bb105/reflections-0.9.10-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.nd4j/nd4j-common/0.9.1/b04b22aed42a51b2f381ba3f6dec4799564312b0/nd4j-common-0.9.1.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.nd4j/nd4j-common/0.9.1/71da5091d67c3a312dfcbeeab1d7264c2546a40f/nd4j-common-0.9.1-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.nd4j/nd4j-common/0.9.1/58e60dc5689c2b2324dbdb7f6208acb7daa99813/nd4j-common-0.9.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/com.clearspring.analytics/stream/2.7.0/9998f8cf87d329fef226405f8d519638cfe1431d/stream-2.7.0.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/com.clearspring.analytics/stream/2.7.0/d8a8fbb4318d15bd4b7570fbb03e28373e6a49a/stream-2.7.0-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/com.clearspring.analytics/stream/2.7.0/7abd440902be1e990f6c6794d7797cc83b3ee816/stream-2.7.0-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/net.sf.opencsv/opencsv/2.3/c23708cdb9e80a144db433e23344a788a1fd6599/opencsv-2.3.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/net.sf.opencsv/opencsv/2.3/68f4a81350e8da5ca8ce2bcfebc7822c89d96430/opencsv-2.3-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/net.sf.opencsv/opencsv/2.3/235993117036d44d126f76db9ea2202ee4884682/opencsv-2.3-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-core/1.2.3/864344400c3d4d92dfeb0a305dc87d953677c03c/logback-core-1.2.3.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-core/1.2.3/c978d4afd24d32991c8aa31a9c8a1119f19a1cb4/logback-core-1.2.3-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-core/1.2.3/3ebabe69eba0196af9ad3a814f723fb720b9101e/logback-core-1.2.3-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco/javacpp/1.3.3/bdea626b334e6a31cfa7b2a9ab3881e6da7015ce/javacpp-1.3.3.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco/javacpp/1.3.3/7dff948e29fede7d419532ee687882470f1da6ae/javacpp-1.3.3-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco/javacpp/1.3.3/4d862e65b68f322bd27212c0f530a0a8e87bc957/javacpp-1.3.3-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/hdf5-platform/1.10.0-patch1-1.3/e621453341f1a920b86fa611ac29c135fed221c8/hdf5-platform-1.10.0-patch1-1.3.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES/>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.nd4j/nd4j-jackson/0.9.1/f075d7ce5cafc705b2743891da920ec66dc50b6c/nd4j-jackson-0.9.1.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.nd4j/nd4j-jackson/0.9.1/630e1c22889cb87ebc62f5f7119b307496f074b0/nd4j-jackson-0.9.1-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.nd4j/nd4j-jackson/0.9.1/c2797e877ac2b3320784cc1bdfd99b0e1d4b54d1/nd4j-jackson-0.9.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.nd4j/nd4j-buffer/0.9.1/55e8026a87719eca757b1eb05e458c66ed6e35dc/nd4j-buffer-0.9.1.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.nd4j/nd4j-buffer/0.9.1/2ac3543731a81efaaa8da7cba5eff576fc05a716/nd4j-buffer-0.9.1-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.nd4j/nd4j-buffer/0.9.1/1a2185f581a0868f948ab8dc0feaef3c822b5bad/nd4j-buffer-0.9.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.nd4j/nd4j-context/0.9.1/bd07864a9c490a01cc88e23b6b3b40fef43014a0/nd4j-context-0.9.1.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.nd4j/nd4j-context/0.9.1/dedba6d394fe7d7baf745eed02a7e40869db8c06/nd4j-context-0.9.1-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.nd4j/nd4j-context/0.9.1/e77108a4f0c7d18cf5566b8487c4429cdc835bc7/nd4j-context-0.9.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/net.ericaro/neoitertools/1.0.0/25fa0a0aaf12bc386ecdb19a6ee747b361c73a20/neoitertools-1.0.0.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/net.ericaro/neoitertools/1.0.0/158a2a4da697091833d5b58bf4e0f0edb7574ee1/neoitertools-1.0.0-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/net.ericaro/neoitertools/1.0.0/eb896e55dbacc0ce95263c18440758118947c6ea/neoitertools-1.0.0-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.yaml/snakeyaml/1.12/ebe66a6b88caab31d7a19571ad23656377523545/snakeyaml-1.12.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.yaml/snakeyaml/1.12/639243bb10cce7169869f6d37d3b176541428e97/snakeyaml-1.12-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.yaml/snakeyaml/1.12/f86c67beb22f7d1edb5d6c6a3c4dab77a23234da/snakeyaml-1.12-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.codehaus.woodstox/stax2-api/3.1.4/ac19014b1e6a7c08aad07fe114af792676b685b7/stax2-api-3.1.4.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.codehaus.woodstox/stax2-api/3.1.4/819aa74f907d379c6afc2e0376808ca9feadcbb1/stax2-api-3.1.4-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.codehaus.woodstox/stax2-api/3.1.4/b40604d61c01cc081a4a7bdfc562aa9847ee8857/stax2-api-3.1.4-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/com.github.jai-imageio/jai-imageio-core/1.3.0/268feccd3a0fe32058ede66db41a21d9c7a9e535/jai-imageio-core-1.3.0.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/com.github.jai-imageio/jai-imageio-core/1.3.0/dbffad3e9bd5da00077432f72bf5cb0a257eaa8c/jai-imageio-core-1.3.0-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/com.github.jai-imageio/jai-imageio-core/1.3.0/38c73e1f0420a2c290ecff951e8a73945d22ccdd/jai-imageio-core-1.3.0-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/com.twelvemonkeys.imageio/imageio-jpeg/3.1.1/464d6537504c7855c8aa3669b2726641ee3fd00c/imageio-jpeg-3.1.1.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/com.twelvemonkeys.imageio/imageio-jpeg/3.1.1/e3f024264f578548b894a0a3e2b8029042fe5ad0/imageio-jpeg-3.1.1-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/com.twelvemonkeys.imageio/imageio-jpeg/3.1.1/d663f03ee9ede88475f322d6e0b01b38c2c0b585/imageio-jpeg-3.1.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/com.twelvemonkeys.imageio/imageio-tiff/3.1.1/df54331a36fba97907e9413297c51defbe24a224/imageio-tiff-3.1.1.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/com.twelvemonkeys.imageio/imageio-tiff/3.1.1/ad202d81f27cc5c9c4c3e975ef39400a5dac5886/imageio-tiff-3.1.1-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/com.twelvemonkeys.imageio/imageio-tiff/3.1.1/591b1c0f5b7be66f7d252e3d051c69465368740e/imageio-tiff-3.1.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/com.twelvemonkeys.imageio/imageio-psd/3.1.1/8073714c928c9343a9e6dc68b4f48ab9c51a41f0/imageio-psd-3.1.1.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/com.twelvemonkeys.imageio/imageio-psd/3.1.1/2e9215bc2c4fcd182d75d63a53baac8488f8a35/imageio-psd-3.1.1-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/com.twelvemonkeys.imageio/imageio-psd/3.1.1/9adb9161d6a143e6db381916d6591b33fe4aa2c/imageio-psd-3.1.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/com.twelvemonkeys.imageio/imageio-bmp/3.1.1/3b6f82168a6f76899e33a8a9f4058d0e127df30e/imageio-bmp-3.1.1.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/com.twelvemonkeys.imageio/imageio-bmp/3.1.1/be7182b92c717586debd5e2c032b8a5a15a52dae/imageio-bmp-3.1.1-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/com.twelvemonkeys.imageio/imageio-bmp/3.1.1/3133c62c044c5391826e06cdeaa46e4963ccbb4d/imageio-bmp-3.1.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco/javacv/1.3.3/df8e6257480f3f58fca5f6867fe6bf6ac000d7ea/javacv-1.3.3.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco/javacv/1.3.3/2278713736b214bad848ff91852d5b80dcd720f4/javacv-1.3.3-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco/javacv/1.3.3/6b731db461eacdffff1a116398fa33a7e309514/javacv-1.3.3-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/opencv-platform/3.2.0-1.3/28c5ebd90f18c239cbbd09dbfcce2fadab6aa76/opencv-platform-3.2.0-1.3.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES/>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/leptonica-platform/1.73-1.3/99ab56ba1f9248e39e8c502df2b4849b4e33b425/leptonica-platform-1.73-1.3.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES/>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/openblas/0.2.19-1.3/d82330716ef90c175cfe238a4b8b0509a6fa705c/openblas-0.2.19-1.3.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/openblas/0.2.19-1.3/a03867b4bc38cdc28d18d7bcde8ba0c075979bf/openblas-0.2.19-1.3-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/openblas/0.2.19-1.3/5c336d63e768ff4f21449479aec5e048849e16ae/openblas-0.2.19-1.3-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/openblas/0.2.19-1.3/ef70f48568644a11e29c69981147cba2b3681c55/openblas-0.2.19-1.3-android-arm.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/openblas/0.2.19-1.3/a03867b4bc38cdc28d18d7bcde8ba0c075979bf/openblas-0.2.19-1.3-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/openblas/0.2.19-1.3/5c336d63e768ff4f21449479aec5e048849e16ae/openblas-0.2.19-1.3-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/openblas/0.2.19-1.3/2189141b6c83cc8e5b342b04e8f49e22996f72f4/openblas-0.2.19-1.3-android-x86.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/openblas/0.2.19-1.3/a03867b4bc38cdc28d18d7bcde8ba0c075979bf/openblas-0.2.19-1.3-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/openblas/0.2.19-1.3/5c336d63e768ff4f21449479aec5e048849e16ae/openblas-0.2.19-1.3-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/openblas/0.2.19-1.3/f4690d42b6fb6c2e51ef7c4412128bccaf58a30b/openblas-0.2.19-1.3-linux-x86.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/openblas/0.2.19-1.3/a03867b4bc38cdc28d18d7bcde8ba0c075979bf/openblas-0.2.19-1.3-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/openblas/0.2.19-1.3/5c336d63e768ff4f21449479aec5e048849e16ae/openblas-0.2.19-1.3-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/openblas/0.2.19-1.3/9d1b1cceb7e113eb31b198bffcb336647191dda4/openblas-0.2.19-1.3-linux-x86_64.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/openblas/0.2.19-1.3/a03867b4bc38cdc28d18d7bcde8ba0c075979bf/openblas-0.2.19-1.3-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/openblas/0.2.19-1.3/5c336d63e768ff4f21449479aec5e048849e16ae/openblas-0.2.19-1.3-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/openblas/0.2.19-1.3/dad2dde60800dfb1108f957f514a5f8de942f5d3/openblas-0.2.19-1.3-linux-armhf.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/openblas/0.2.19-1.3/a03867b4bc38cdc28d18d7bcde8ba0c075979bf/openblas-0.2.19-1.3-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/openblas/0.2.19-1.3/5c336d63e768ff4f21449479aec5e048849e16ae/openblas-0.2.19-1.3-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/openblas/0.2.19-1.3/2e6e277acdbad4d037ed26ee40ac2f5db57196c9/openblas-0.2.19-1.3-linux-ppc64le.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/openblas/0.2.19-1.3/a03867b4bc38cdc28d18d7bcde8ba0c075979bf/openblas-0.2.19-1.3-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/openblas/0.2.19-1.3/5c336d63e768ff4f21449479aec5e048849e16ae/openblas-0.2.19-1.3-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/openblas/0.2.19-1.3/8a405939a23f53f980d9a32678efff424c593d51/openblas-0.2.19-1.3-macosx-x86_64.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/openblas/0.2.19-1.3/a03867b4bc38cdc28d18d7bcde8ba0c075979bf/openblas-0.2.19-1.3-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/openblas/0.2.19-1.3/5c336d63e768ff4f21449479aec5e048849e16ae/openblas-0.2.19-1.3-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/openblas/0.2.19-1.3/f10fed548970f6bc1f8f0692da30f6328da21b59/openblas-0.2.19-1.3-windows-x86.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/openblas/0.2.19-1.3/a03867b4bc38cdc28d18d7bcde8ba0c075979bf/openblas-0.2.19-1.3-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/openblas/0.2.19-1.3/5c336d63e768ff4f21449479aec5e048849e16ae/openblas-0.2.19-1.3-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/openblas/0.2.19-1.3/5700913706162e7e306289bd06cd0508d49d6c85/openblas-0.2.19-1.3-windows-x86_64.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/openblas/0.2.19-1.3/a03867b4bc38cdc28d18d7bcde8ba0c075979bf/openblas-0.2.19-1.3-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/openblas/0.2.19-1.3/5c336d63e768ff4f21449479aec5e048849e16ae/openblas-0.2.19-1.3-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.nd4j/nd4j-native-api/0.9.1/7fcba24a804d955bcc6958609b41fb562b7a491c/nd4j-native-api-0.9.1.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.nd4j/nd4j-native-api/0.9.1/a5c18a56a912932e9c32f9d322a2a854d11f098b/nd4j-native-api-0.9.1-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.nd4j/nd4j-native-api/0.9.1/fb440408159a48da90b614b51eaacb9c4de4b45a/nd4j-native-api-0.9.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.javassist/javassist/3.18.2-GA/1180a90fbad732b60fb728a6bbe8fcb3151423d7/javassist-3.18.2-GA.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.javassist/javassist/3.18.2-GA/d0e676f1407a226f978018fee1418d4d50dabb64/javassist-3.18.2-GA-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.javassist/javassist/3.18.2-GA/7163084913aa7399e4ce2cbc3ee5c00ac2b1f35f/javassist-3.18.2-GA-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/annotations/2.0.1/9ef6656259841cebfb9fb0697bb122ada4485498/annotations-2.0.1.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES/>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/com.github.stephenc.findbugs/findbugs-annotations/1.3.9-1/a6b11447635d80757d64b355bed3c00786d86801/findbugs-annotations-1.3.9-1.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/com.github.stephenc.findbugs/findbugs-annotations/1.3.9-1/4daf0b49e72b59ee97e53807d2d6aae412b2d2f9/findbugs-annotations-1.3.9-1-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/com.github.stephenc.findbugs/findbugs-annotations/1.3.9-1/bbcf4719c93a1e8a66f7356ba9f9ffe426a1dd16/findbugs-annotations-1.3.9-1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/it.unimi.dsi/fastutil/6.5.7/dec71174d0c8a20f355e5af8b59f25eb424c49d3/fastutil-6.5.7.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/it.unimi.dsi/fastutil/6.5.7/792adb77dd6a6b2ee82ae0cd10032486ca3cd303/fastutil-6.5.7-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/it.unimi.dsi/fastutil/6.5.7/32865f4614485ecbeb60fc9eda912605c31a3190/fastutil-6.5.7-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/hdf5/1.10.0-patch1-1.3/ce1226e7bd51d3fd9d88865d1294aac61e119d09/hdf5-1.10.0-patch1-1.3.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/hdf5/1.10.0-patch1-1.3/f4cd090c42eb7099fc9e2775c2eed7f1f08b40c3/hdf5-1.10.0-patch1-1.3-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/hdf5/1.10.0-patch1-1.3/815abfd4649457def958d33a5cb6a35c8eaef76c/hdf5-1.10.0-patch1-1.3-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/hdf5/1.10.0-patch1-1.3/8e3c1edd8e91fd4fe6ad802e80102084a873f575/hdf5-1.10.0-patch1-1.3-linux-x86.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/hdf5/1.10.0-patch1-1.3/f4cd090c42eb7099fc9e2775c2eed7f1f08b40c3/hdf5-1.10.0-patch1-1.3-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/hdf5/1.10.0-patch1-1.3/815abfd4649457def958d33a5cb6a35c8eaef76c/hdf5-1.10.0-patch1-1.3-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/hdf5/1.10.0-patch1-1.3/9b745bd9e86f86468be56562c72a249a008c6631/hdf5-1.10.0-patch1-1.3-linux-x86_64.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/hdf5/1.10.0-patch1-1.3/f4cd090c42eb7099fc9e2775c2eed7f1f08b40c3/hdf5-1.10.0-patch1-1.3-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/hdf5/1.10.0-patch1-1.3/815abfd4649457def958d33a5cb6a35c8eaef76c/hdf5-1.10.0-patch1-1.3-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/hdf5/1.10.0-patch1-1.3/b17738459b3365df8d3431d43f47f20e8e416732/hdf5-1.10.0-patch1-1.3-linux-ppc64le.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/hdf5/1.10.0-patch1-1.3/f4cd090c42eb7099fc9e2775c2eed7f1f08b40c3/hdf5-1.10.0-patch1-1.3-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/hdf5/1.10.0-patch1-1.3/815abfd4649457def958d33a5cb6a35c8eaef76c/hdf5-1.10.0-patch1-1.3-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/hdf5/1.10.0-patch1-1.3/fe76440423817b0f60d6df3a18ebd4e0f0dcdd0b/hdf5-1.10.0-patch1-1.3-macosx-x86_64.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/hdf5/1.10.0-patch1-1.3/f4cd090c42eb7099fc9e2775c2eed7f1f08b40c3/hdf5-1.10.0-patch1-1.3-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/hdf5/1.10.0-patch1-1.3/815abfd4649457def958d33a5cb6a35c8eaef76c/hdf5-1.10.0-patch1-1.3-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/hdf5/1.10.0-patch1-1.3/76b579910f51cd628bed8f6cbb245670483b9eeb/hdf5-1.10.0-patch1-1.3-windows-x86.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/hdf5/1.10.0-patch1-1.3/f4cd090c42eb7099fc9e2775c2eed7f1f08b40c3/hdf5-1.10.0-patch1-1.3-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/hdf5/1.10.0-patch1-1.3/815abfd4649457def958d33a5cb6a35c8eaef76c/hdf5-1.10.0-patch1-1.3-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/hdf5/1.10.0-patch1-1.3/9b3d950b4f6681e36a03d12006784b54509b5195/hdf5-1.10.0-patch1-1.3-windows-x86_64.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/hdf5/1.10.0-patch1-1.3/f4cd090c42eb7099fc9e2775c2eed7f1f08b40c3/hdf5-1.10.0-patch1-1.3-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/hdf5/1.10.0-patch1-1.3/815abfd4649457def958d33a5cb6a35c8eaef76c/hdf5-1.10.0-patch1-1.3-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.nd4j/nd4j-base64/0.9.1/ac37d0e4604df53db1a7a4fd8b09841a779792d3/nd4j-base64-0.9.1.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.nd4j/nd4j-base64/0.9.1/f0e660020f9a88ff4d5e60b9218256619499ea23/nd4j-base64-0.9.1-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.nd4j/nd4j-base64/0.9.1/1d5d01af057119e7651068e1ae196b08336d9a0a/nd4j-base64-0.9.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/junit/junit/4.8.2/c94f54227b08100974c36170dcb53329435fe5ad/junit-4.8.2.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/junit/junit/4.8.2/4e4ef638108b6431d060bf68f7d76d169a26ed57/junit-4.8.2-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/junit/junit/4.8.2/cccca612a66b8387c399be31d69daf000de2ac9e/junit-4.8.2-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/com.twelvemonkeys.imageio/imageio-core/3.1.1/dbdf29da53ac89753d9abfc0f38802f6483821e/imageio-core-3.1.1.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/com.twelvemonkeys.imageio/imageio-core/3.1.1/74572c46fa97a51fad5e41941d735d8ea9647fd8/imageio-core-3.1.1-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/com.twelvemonkeys.imageio/imageio-core/3.1.1/9c04e9c1a77b2d91247984a508b5a1115e2aba6e/imageio-core-3.1.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/com.twelvemonkeys.imageio/imageio-metadata/3.1.1/52b6b85601492e94fa8a08211c08179b1c888d91/imageio-metadata-3.1.1.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/com.twelvemonkeys.imageio/imageio-metadata/3.1.1/a812c35c59ef28d38595376483ff41323901470c/imageio-metadata-3.1.1-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/com.twelvemonkeys.imageio/imageio-metadata/3.1.1/1256a0bfcf357b6545e438d6bb917a143c59b605/imageio-metadata-3.1.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/com.twelvemonkeys.common/common-lang/3.1.1/a9b5f8094211a8fbe5e9f469ebb266c1886d3666/common-lang-3.1.1.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/com.twelvemonkeys.common/common-lang/3.1.1/d48c427cec67a18020700ee650facbd9953684c5/common-lang-3.1.1-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/com.twelvemonkeys.common/common-lang/3.1.1/3bf19df83e5acbda0c86b7d34fe1d2dada290d67/common-lang-3.1.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/com.twelvemonkeys.common/common-io/3.1.1/b6aec796ca2d20b145b6fa88bbe068724a258450/common-io-3.1.1.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/com.twelvemonkeys.common/common-io/3.1.1/7b718937765d9025d71c0a0ebcca8fe268df541b/common-io-3.1.1-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/com.twelvemonkeys.common/common-io/3.1.1/8cbce8bb845783fdf4f42eb9a9090793eece5a4e/common-io-3.1.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/com.twelvemonkeys.common/common-image/3.1.1/c86b3bc138b0caee17ce4193275636543cf28bfe/common-image-3.1.1.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/com.twelvemonkeys.common/common-image/3.1.1/f8470f30a89faf7d5770fbd383b1031866a7e7a8/common-image-3.1.1-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/com.twelvemonkeys.common/common-image/3.1.1/14672e0148350fe769b38ecf109339f85dd45d14/common-image-3.1.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/opencv/3.2.0-1.3/d442ea90d190e680d8c6f18469aaeaed26c00c77/opencv-3.2.0-1.3.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/opencv/3.2.0-1.3/7a8df6c453359c0f5c10721099ebfbd8ed4670c1/opencv-3.2.0-1.3-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/opencv/3.2.0-1.3/920df028fd3476cc44e1adef3d482ab1d9f12525/opencv-3.2.0-1.3-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/opencv/3.2.0-1.3/8affe9427828689dd9b5cc8d59d8492cf28bd06f/opencv-3.2.0-1.3-android-arm.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/opencv/3.2.0-1.3/7a8df6c453359c0f5c10721099ebfbd8ed4670c1/opencv-3.2.0-1.3-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/opencv/3.2.0-1.3/920df028fd3476cc44e1adef3d482ab1d9f12525/opencv-3.2.0-1.3-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/opencv/3.2.0-1.3/2a562ef4d4408c1dea5d4190b6bbd151a83c8eae/opencv-3.2.0-1.3-android-x86.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/opencv/3.2.0-1.3/7a8df6c453359c0f5c10721099ebfbd8ed4670c1/opencv-3.2.0-1.3-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/opencv/3.2.0-1.3/920df028fd3476cc44e1adef3d482ab1d9f12525/opencv-3.2.0-1.3-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/opencv/3.2.0-1.3/7db41aeb44fbf201187aa4a1f899d367f1b01ded/opencv-3.2.0-1.3-linux-x86.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/opencv/3.2.0-1.3/7a8df6c453359c0f5c10721099ebfbd8ed4670c1/opencv-3.2.0-1.3-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/opencv/3.2.0-1.3/920df028fd3476cc44e1adef3d482ab1d9f12525/opencv-3.2.0-1.3-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/opencv/3.2.0-1.3/4c712afdddfbd1b9da59255f9f45a7f24252524e/opencv-3.2.0-1.3-linux-x86_64.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/opencv/3.2.0-1.3/7a8df6c453359c0f5c10721099ebfbd8ed4670c1/opencv-3.2.0-1.3-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/opencv/3.2.0-1.3/920df028fd3476cc44e1adef3d482ab1d9f12525/opencv-3.2.0-1.3-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/opencv/3.2.0-1.3/7fdd60baeb95fc02f5714de4e5882035d892bd06/opencv-3.2.0-1.3-linux-armhf.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/opencv/3.2.0-1.3/7a8df6c453359c0f5c10721099ebfbd8ed4670c1/opencv-3.2.0-1.3-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/opencv/3.2.0-1.3/920df028fd3476cc44e1adef3d482ab1d9f12525/opencv-3.2.0-1.3-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/opencv/3.2.0-1.3/8768f158b0ce3cfb324600285afd116fc064d9b9/opencv-3.2.0-1.3-linux-ppc64le.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/opencv/3.2.0-1.3/7a8df6c453359c0f5c10721099ebfbd8ed4670c1/opencv-3.2.0-1.3-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/opencv/3.2.0-1.3/920df028fd3476cc44e1adef3d482ab1d9f12525/opencv-3.2.0-1.3-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/opencv/3.2.0-1.3/2e066032f00ee55a28ffdc96f37211f827d98e9b/opencv-3.2.0-1.3-macosx-x86_64.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/opencv/3.2.0-1.3/7a8df6c453359c0f5c10721099ebfbd8ed4670c1/opencv-3.2.0-1.3-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/opencv/3.2.0-1.3/920df028fd3476cc44e1adef3d482ab1d9f12525/opencv-3.2.0-1.3-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/opencv/3.2.0-1.3/38bb9bef4fea8c7489aab7a7d838f0aac7a616cd/opencv-3.2.0-1.3-windows-x86.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/opencv/3.2.0-1.3/7a8df6c453359c0f5c10721099ebfbd8ed4670c1/opencv-3.2.0-1.3-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/opencv/3.2.0-1.3/920df028fd3476cc44e1adef3d482ab1d9f12525/opencv-3.2.0-1.3-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/opencv/3.2.0-1.3/8078a64309b575ef2cfb6b369eef61f30580bd65/opencv-3.2.0-1.3-windows-x86_64.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/opencv/3.2.0-1.3/7a8df6c453359c0f5c10721099ebfbd8ed4670c1/opencv-3.2.0-1.3-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/opencv/3.2.0-1.3/920df028fd3476cc44e1adef3d482ab1d9f12525/opencv-3.2.0-1.3-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/ffmpeg/3.2.1-1.3/2b506fefac100e50800bb1b5908d7588ab21fb45/ffmpeg-3.2.1-1.3.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/ffmpeg/3.2.1-1.3/c70b9719668d73562c25dbd4b1b7856b11a2a05/ffmpeg-3.2.1-1.3-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/ffmpeg/3.2.1-1.3/85f2f9e83a3761668e0e2429a0d7a4bac24007b8/ffmpeg-3.2.1-1.3-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/flycapture/2.9.3.43-1.3/bb48ed01be621b6b38b91d45a96e68e7ad7bf25e/flycapture-2.9.3.43-1.3.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/flycapture/2.9.3.43-1.3/90c58d49ec6c4ac570968c79724a00feddd15f2c/flycapture-2.9.3.43-1.3-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/flycapture/2.9.3.43-1.3/4b17bafea9f99754508d05d8870e9805e07c90e3/flycapture-2.9.3.43-1.3-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/libdc1394/2.2.4-1.3/e702de628164ba633e77f3b4a4a16a0c402ce364/libdc1394-2.2.4-1.3.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/libdc1394/2.2.4-1.3/d15de34871d4cac0964b5a25583905eff0f4c48c/libdc1394-2.2.4-1.3-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/libdc1394/2.2.4-1.3/f062731ad5fcc6972fe496804d724badd74c60ce/libdc1394-2.2.4-1.3-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/libfreenect/0.5.3-1.3/ea7981fbc3eba3cf3d8c1b8492d1952b85d20068/libfreenect-0.5.3-1.3.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/libfreenect/0.5.3-1.3/ebdb3bb7eb786b3e89a96cab6bd9a3e18baa4245/libfreenect-0.5.3-1.3-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/libfreenect/0.5.3-1.3/fed0fe13c59c331d0552adaed80a6ab495d2f248/libfreenect-0.5.3-1.3-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/libfreenect2/0.2.0-1.3/afd5363d196de86fece4e138ced9d624e0eab5b2/libfreenect2-0.2.0-1.3.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/libfreenect2/0.2.0-1.3/2d1f7478df5efce30af5500451a5988526fb9fbd/libfreenect2-0.2.0-1.3-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/libfreenect2/0.2.0-1.3/74397ed9e60cd23cff6a41d0a2cbace6e4191d91/libfreenect2-0.2.0-1.3-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/librealsense/1.9.6-1.3/a38afba003c895652db9f29f7e014e451a73a0b4/librealsense-1.9.6-1.3.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/librealsense/1.9.6-1.3/6a45f0ab8f37d4fed20c4b5561f2daebe8d2d68/librealsense-1.9.6-1.3-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/librealsense/1.9.6-1.3/20fcc8336995fef77bb886011eb43c70dbc5d91f/librealsense-1.9.6-1.3-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/videoinput/0.200-1.3/f30b2cba25b56af3a60a679775016537fda37c41/videoinput-0.200-1.3.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/videoinput/0.200-1.3/2007304fc16946f59b6a75a1575a1a1ef0e1b89d/videoinput-0.200-1.3-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/videoinput/0.200-1.3/6c0fbbb3d4423e7a9ca52039533ae06d117bb12a/videoinput-0.200-1.3-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/artoolkitplus/2.3.1-1.3/543bf47572afc2f02c30f125d77019b1306e82d1/artoolkitplus-2.3.1-1.3.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/artoolkitplus/2.3.1-1.3/3b67b7b906670bf01a6495c3b8ebdaa4f3ac92de/artoolkitplus-2.3.1-1.3-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/artoolkitplus/2.3.1-1.3/55e217371a3ac6774a3ef19cef7f9eb3dd6a30a4/artoolkitplus-2.3.1-1.3-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/flandmark/1.07-1.3/e5cd132c846b296edc8eee43c596583adfd151de/flandmark-1.07-1.3.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/flandmark/1.07-1.3/5afa10ab6452446c3d3a2945399078509b33f58f/flandmark-1.07-1.3-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/flandmark/1.07-1.3/13928ee405d0e6c291122e58467e80d70fe0ccf9/flandmark-1.07-1.3-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/leptonica/1.73-1.3/40c4ab433811c566104993f3a93fd70f809f33be/leptonica-1.73-1.3.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/leptonica/1.73-1.3/a6a4c30bdfd5bf4516ccc106b81a80554ab886b6/leptonica-1.73-1.3-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/leptonica/1.73-1.3/1049c4675015eb0e2c994eff16ea0e30694ef8cc/leptonica-1.73-1.3-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/leptonica/1.73-1.3/b7b413f6450b7dd922af6dfdf5e54fb53b2c6ab6/leptonica-1.73-1.3-android-arm.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/leptonica/1.73-1.3/a6a4c30bdfd5bf4516ccc106b81a80554ab886b6/leptonica-1.73-1.3-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/leptonica/1.73-1.3/1049c4675015eb0e2c994eff16ea0e30694ef8cc/leptonica-1.73-1.3-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/leptonica/1.73-1.3/f5aee63533a29870cc33153379e8023bc89328dc/leptonica-1.73-1.3-android-x86.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/leptonica/1.73-1.3/a6a4c30bdfd5bf4516ccc106b81a80554ab886b6/leptonica-1.73-1.3-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/leptonica/1.73-1.3/1049c4675015eb0e2c994eff16ea0e30694ef8cc/leptonica-1.73-1.3-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/leptonica/1.73-1.3/91ec2406594c843b8d83a088ebef45ef5ad5c9a8/leptonica-1.73-1.3-linux-x86.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/leptonica/1.73-1.3/a6a4c30bdfd5bf4516ccc106b81a80554ab886b6/leptonica-1.73-1.3-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/leptonica/1.73-1.3/1049c4675015eb0e2c994eff16ea0e30694ef8cc/leptonica-1.73-1.3-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/leptonica/1.73-1.3/68f9e1b9f18825a110477a734c38c47f7e70c55d/leptonica-1.73-1.3-linux-x86_64.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/leptonica/1.73-1.3/a6a4c30bdfd5bf4516ccc106b81a80554ab886b6/leptonica-1.73-1.3-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/leptonica/1.73-1.3/1049c4675015eb0e2c994eff16ea0e30694ef8cc/leptonica-1.73-1.3-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/leptonica/1.73-1.3/d435e780eda858c19ed56cb632174ab599b19825/leptonica-1.73-1.3-linux-armhf.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/leptonica/1.73-1.3/a6a4c30bdfd5bf4516ccc106b81a80554ab886b6/leptonica-1.73-1.3-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/leptonica/1.73-1.3/1049c4675015eb0e2c994eff16ea0e30694ef8cc/leptonica-1.73-1.3-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/leptonica/1.73-1.3/556c28976b41ddddbb6304f6fb86ac07d607e81e/leptonica-1.73-1.3-linux-ppc64le.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/leptonica/1.73-1.3/a6a4c30bdfd5bf4516ccc106b81a80554ab886b6/leptonica-1.73-1.3-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/leptonica/1.73-1.3/1049c4675015eb0e2c994eff16ea0e30694ef8cc/leptonica-1.73-1.3-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/leptonica/1.73-1.3/a56eae1a46553c879269087e1787aec5a4675e1f/leptonica-1.73-1.3-macosx-x86_64.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/leptonica/1.73-1.3/a6a4c30bdfd5bf4516ccc106b81a80554ab886b6/leptonica-1.73-1.3-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/leptonica/1.73-1.3/1049c4675015eb0e2c994eff16ea0e30694ef8cc/leptonica-1.73-1.3-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/leptonica/1.73-1.3/88bc73b49b31463ec525c13ec83c3f229b934c3c/leptonica-1.73-1.3-windows-x86.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/leptonica/1.73-1.3/a6a4c30bdfd5bf4516ccc106b81a80554ab886b6/leptonica-1.73-1.3-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/leptonica/1.73-1.3/1049c4675015eb0e2c994eff16ea0e30694ef8cc/leptonica-1.73-1.3-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/leptonica/1.73-1.3/f298bbd00ae8d620507c0d4ecab5e49a7eb85e03/leptonica-1.73-1.3-windows-x86_64.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/leptonica/1.73-1.3/a6a4c30bdfd5bf4516ccc106b81a80554ab886b6/leptonica-1.73-1.3-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/leptonica/1.73-1.3/1049c4675015eb0e2c994eff16ea0e30694ef8cc/leptonica-1.73-1.3-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/commons-net/commons-net/3.1/2298164a7c2484406f2aa5ac85b205d39019896f/commons-net-3.1.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/commons-net/commons-net/3.1/8af84765ae00b5b7669c9e5c71947eee161e8f02/commons-net-3.1-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/commons-net/commons-net/3.1/8cc516e03d35ecf8f4ca71511f7961f1a9339820/commons-net-3.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-compress/1.8.1/a698750c16740fd5b3871425f4cb3bbaa87f529d/commons-compress-1.8.1.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-compress/1.8.1/8e9724537be2a09287d7483c6b4a0c9a0bddf944/commons-compress-1.8.1-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-compress/1.8.1/3caea4421428752206c7a94c3e3097f0c47f1bb8/commons-compress-1.8.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.25/da76ca59f6a57ee3102f8f9bd9cee742973efa8a/slf4j-api-1.7.25.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.25/f003e89ddebdbaca5cf3fc7cc0c67c88c2ca1a3c/slf4j-api-1.7.25-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///home/troy/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.25/962153db4a9ea71b79d047dfd1b2a0d80d8f4739/slf4j-api-1.7.25-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+  </component>
+  <component name="ModuleRootManager"/>
+</module>

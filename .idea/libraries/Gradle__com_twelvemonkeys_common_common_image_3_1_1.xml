@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.twelvemonkeys.common:common-image:3.1.1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.twelvemonkeys.common/common-image/3.1.1/c86b3bc138b0caee17ce4193275636543cf28bfe/common-image-3.1.1.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.twelvemonkeys.common/common-image/3.1.1/f8470f30a89faf7d5770fbd383b1031866a7e7a8/common-image-3.1.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.twelvemonkeys.common/common-image/3.1.1/14672e0148350fe769b38ecf109339f85dd45d14/common-image-3.1.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

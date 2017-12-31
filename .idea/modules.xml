@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/dl4j-xor.iml" filepath="$PROJECT_DIR$/.idea/modules/dl4j-xor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/dl4j-xor_main.iml" filepath="$PROJECT_DIR$/.idea/modules/dl4j-xor_main.iml" group="dl4j-xor" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/dl4j-xor_test.iml" filepath="$PROJECT_DIR$/.idea/modules/dl4j-xor_test.iml" group="dl4j-xor" />
+    </modules>
+  </component>
+</project>
