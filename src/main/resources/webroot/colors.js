@@ -1,10 +1,13 @@
 $(document).ready(function(){
   const curRGB = []
 
-  const startColor = Math.floor(Math.random() * 2) == 0 ? 'rgb(0,0,0)' : 'rgb(255,255,255)'
+  const startColorIdx = Math.round(Math.random())
+  const startColorLabel = startColorIdx == 0 ? 'black' : 'white'
+  const startColor = startColorIdx == 0 ? 'rgb(0,0,0)' : 'rgb(255,255,255)'
   $('#testColor').css('background-color',startColor)
+  $("input[name='color'][value='" + startColorLabel + "']").prop('checked', true);
   getCurColor()
-  getColorInference(curRGB, setColorClassification, alertFailure)
+  postObservationAndInferNextColor({rgb: curRGB})
 
   function setColorClassification(data, textStatus, jqxhr) {
     console.log(JSON.stringify(jqxhr, null, '  '))
@@ -25,8 +28,9 @@ $(document).ready(function(){
     }
   }
 
-  function getColorInference(curRGB, successCB, failureCB) {
+  function getColorInference(color, successCB, failureCB) {
     const data = {
+      color,
       rgb: curRGB
     }
     console.log(data)
@@ -39,33 +43,36 @@ $(document).ready(function(){
     const g = Math.round(Math.random() * 255)
     const b = Math.round(Math.random() * 255)
     const color = 'rgb(' + r + ',' + g + ',' + b + ')'
-    $('#testColor').css('background-color',color)
+    //FIXME changing color randomly before posting observation
+    //gen new color and send with post observation for inference, get back color prediction
+    //set new color and prediction in radio button
+    postObservationAndInferNextColor({rgb: [r, g, b]})
   })
 
-  $('#testColorSubmit').click(function() {
+  function postObservationAndInferNextColor(nextColor) {
     getCurColor()
-    let colorClass = $('input[name=color]:checked').val()
-    console.log(colorClass)
+    let color = $('input[name=color]:checked').val()
+    console.log(color)
 
     const data = {
+      color,
       rgb: curRGB,
-      colorClass
+      nextColor
     }
     postData(Config.getColorTrainValidateUrl(), data, function(data, textStatus, jqxhr) {
       console.log(data)
       $("input[name='color'][value='" + data.color + "']").prop('checked', true);
+      const rgb = 'rgb(' + nextColor.rgb.join(',') + ')'
+      $('#testColor').css('background-color',rgb)
       $('#inference').text(data.timeMs)
+      $('#stats').text(data.stats)
     },
     function(jqxhr, textStatus, error) {
       console.log("Error, retry\r\n" + JSON.stringify(jqxhr, null, '  '))
     })
-  })
+  }
 
   function postData(url, data, successCB, failureCB) {
-    //console.log(data)
-    //var jqxhr = $.post("http://localhost:2525/", data)
-
-    //$.post("http://localhost:8080/test", data, successCB, 'json')
     $.ajax({
     	url,
     	type: 'POST',

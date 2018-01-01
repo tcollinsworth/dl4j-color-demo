@@ -3,6 +3,8 @@ package com.daisyworks.demo.model;
 import org.nd4j.linalg.api.ndarray.INDArray;
 import org.nd4j.linalg.factory.Nd4j;
 
+import com.daisyworks.demo.model.NeuralNet.Observation;
+
 public class Inferrer {
 	NeuralNet nn;
 
@@ -10,15 +12,13 @@ public class Inferrer {
 		this.nn = nn;
 	}
 
-	public Output infer(float i1, float i2, float i3, float i4, float i5) {
+	public Output infer(Observation f) {
 		INDArray inputs = Nd4j.zeros(1, 5);
-		inputs.putScalar(new int[] { 0, 0 }, i1);
-		inputs.putScalar(new int[] { 0, 1 }, i2);
-		inputs.putScalar(new int[] { 0, 2 }, i3);
-		inputs.putScalar(new int[] { 0, 3 }, i4);
-		inputs.putScalar(new int[] { 0, 4 }, i5);
+		for (int i = 0; i < f.features.length; i++) {
+			inputs.putScalar(new int[] { 0, i }, f.features[i]);
+		}
 
-		System.out.println(inputs.toString());
+		System.out.println("infer inputs: " + inputs.toString());
 
 		long start = System.nanoTime();
 		int[] outputs = nn.net.predict(inputs); // 512us for 1 row

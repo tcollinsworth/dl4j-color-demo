@@ -16,11 +16,17 @@ import org.nd4j.linalg.dataset.DataSet;
 import org.nd4j.linalg.dataset.api.iterator.DataSetIterator;
 import org.nd4j.linalg.io.ClassPathResource;
 
+import com.daisyworks.demo.Service;
+
 public class Trainer {
 	NeuralNet nn;
 
 	public Trainer(NeuralNet nn) {
 		this.nn = nn;
+	}
+
+	public void train(Service service) {
+		nn.net.fit(service.trainColoData.features, service.trainColoData.classifications);
 	}
 
 	public void fit() throws IOException, InterruptedException {
@@ -71,7 +77,7 @@ public class Trainer {
 
 		nn.net.fit(allData);
 
-		// create output for every training sample
+		// create output for every training sample - test or validation data
 		INDArray output = nn.net.output(allData.getFeatureMatrix());
 		System.out.println(output);
 
