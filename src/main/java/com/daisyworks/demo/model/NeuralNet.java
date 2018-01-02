@@ -41,30 +41,6 @@ public class NeuralNet {
 	}
 
 	/**
-	 * @param filePathName
-	 *            i.e., trained_mnist_model.zip
-	 * @param saveUpdater
-	 *            allows additional training
-	 * @throws IOException
-	 */
-	public void saveModel(String filePathName, boolean saveUpdater) throws IOException {
-		File locationToSave = new File(filePathName);
-		ModelSerializer.writeModel(net, locationToSave, saveUpdater);
-	}
-
-	/**
-	 * @param filePathName
-	 *            i.e., trained_mnist_model.zip
-	 * @param saveUpdater
-	 *            allows additional training
-	 * @throws IOException
-	 */
-	public void restoreModel(String filePathName, boolean loadUpdater) throws IOException {
-		File locationToSave = new File(filePathName);
-		net = ModelSerializer.restoreMultiLayerNetwork(locationToSave, loadUpdater);
-	}
-
-	/**
 	 * @param iterations
 	 * @param learningRate
 	 */
@@ -128,6 +104,30 @@ public class NeuralNet {
 		System.out.println("Total number of network parameters: " + totalNumParams);
 
 		net.setListeners(new ScoreIterationListener(100));
+	}
+
+	/**
+	 * @param filePathName
+	 *            i.e., trained_mnist_model.zip
+	 * @param saveUpdater
+	 *            allows additional training
+	 * @throws IOException
+	 */
+	public void saveModel(String filePathName, boolean saveUpdater) throws IOException {
+		File locationToSave = new File(filePathName);
+		ModelSerializer.writeModel(net, locationToSave, saveUpdater);
+	}
+
+	/**
+	 * @param filePathName
+	 *            i.e., trained_mnist_model.zip
+	 * @param saveUpdater
+	 *            allows additional training
+	 * @throws IOException
+	 */
+	public void restoreModel(String filePathName, boolean loadUpdater) throws IOException {
+		File locationToSave = new File(filePathName);
+		net = ModelSerializer.restoreMultiLayerNetwork(locationToSave, loadUpdater);
 	}
 
 	/**

@@ -17,6 +17,7 @@ public class ColorRequestHandler extends RequestHandler {
 		super(rc, service);
 	}
 
+	// discriminator is constant and not currently being used and is not necessary
 	public static final float ColorDiscriminator = 0.1f;
 	public static final float RgbScale = 1f / 255f;
 
@@ -83,6 +84,8 @@ public class ColorRequestHandler extends RequestHandler {
 
 		JsonObject respObj = new JsonObject();
 		respObj.put("color", color);
+		JsonArray classProbabilities = new JsonArray(output.classificationProbabilities);
+		respObj.put("colorProbabilities", classProbabilities);
 		respObj.put("timeMs", output.timeMs);
 
 		// System.out.println(String.format("reponse: %s, %s, %s", respObj.encode(), rgbJsonArray, color));

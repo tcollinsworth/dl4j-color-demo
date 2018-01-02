@@ -1,4 +1,5 @@
 $(document).ready(function(){
+  const rgbScale = 1/255
   const curRGB = []
 
   const startColorIdx = Math.round(Math.random())
@@ -59,6 +60,14 @@ $(document).ready(function(){
       rgb: curRGB,
       nextColor
     }
+
+    $('#rInt').text(nextColor.rgb[0])
+    $('#gInt').text(nextColor.rgb[1])
+    $('#bInt').text(nextColor.rgb[2])
+    $('#rScaled').text((nextColor.rgb[0]*rgbScale).toFixed(2))
+    $('#gScaled').text((nextColor.rgb[1]*rgbScale).toFixed(2))
+    $('#bScaled').text((nextColor.rgb[2]*rgbScale).toFixed(2))
+
     postData(Config.getColorTrainValidateUrl(), data, function(data, textStatus, jqxhr) {
       console.log(data)
       $("input[name='color'][value='" + data.color + "']").prop('checked', true);
@@ -66,6 +75,18 @@ $(document).ready(function(){
       $('#testColor').css('background-color',rgb)
       $('#inference').text(data.timeMs.toFixed(2))
       $('#stats').text(data.stats)
+
+      $('#out0val').text(data.colorProbabilities[0].toFixed(3))
+      $('#out1val').text(data.colorProbabilities[1].toFixed(3))
+      $('#out2val').text(data.colorProbabilities[2].toFixed(3))
+      $('#out3val').text(data.colorProbabilities[3].toFixed(3))
+      $('#out4val').text(data.colorProbabilities[4].toFixed(3))
+      $('#out5val').text(data.colorProbabilities[5].toFixed(3))
+      $('#out6val').text(data.colorProbabilities[6].toFixed(3))
+      $('#out7val').text(data.colorProbabilities[7].toFixed(3))
+      $('#out8val').text(data.colorProbabilities[8].toFixed(3))
+      $('#out9val').text(data.colorProbabilities[9].toFixed(3))
+      $('#out10val').text(data.colorProbabilities[10].toFixed(3))
     },
     function(jqxhr, textStatus, error) {
       console.log("Error, retry\r\n" + JSON.stringify(jqxhr, null, '  '))

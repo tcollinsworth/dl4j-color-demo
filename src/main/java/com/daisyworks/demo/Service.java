@@ -40,7 +40,7 @@ public class Service {
 	public WindowedFifoDataSet testColorData = new WindowedFifoDataSet("test", observationWindowSize, inputFeatureCnt, outputClassificationCnt);
 
 	public static void main(String[] args) throws IOException, InterruptedException {
-		// for dev, also requires staticHandler.setCacheEntryTimeout(1) and browser cache disable
+		// for development, also requires staticHandler.setCacheEntryTimeout(1) and browser cache disable
 		System.setProperty("vertx.disableFileCaching", "true");
 
 		Service service = new Service();
