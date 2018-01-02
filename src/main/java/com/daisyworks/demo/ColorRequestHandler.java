@@ -4,11 +4,13 @@ import io.vertx.core.json.JsonArray;
 import io.vertx.core.json.JsonObject;
 import io.vertx.ext.web.RoutingContext;
 
-import java.util.Arrays;
-
 import com.daisyworks.demo.model.Inferrer.Output;
 import com.daisyworks.demo.model.NeuralNet.Observation;
 
+/**
+ * @author troy
+ *
+ */
 public class ColorRequestHandler extends RequestHandler {
 
 	public ColorRequestHandler(RoutingContext rc, Service service) {
@@ -30,7 +32,7 @@ public class ColorRequestHandler extends RequestHandler {
 		int classificationIdx = Colors.valueOf(bodyJson.getString("color")).ordinal();
 		String color = Colors.values()[classificationIdx].name();
 		Observation observation = service.nn.new Observation(classificationIdx, ColorDiscriminator, scaledRGB[0], scaledRGB[1], scaledRGB[2], 0);
-		System.out.println(String.format("observation, %s, %s", rgbJsonArray, color));
+		// System.out.println(String.format("observation, %s, %s", rgbJsonArray, color));
 
 		// randomly assign to training or test/validation windowed set
 		if (Math.round(Math.random()) == 0) {
@@ -54,7 +56,7 @@ public class ColorRequestHandler extends RequestHandler {
 		int green = rgbJsonArray.getInteger(1);
 		int blue = rgbJsonArray.getInteger(2);
 
-		System.out.println("rgb: " + red + "," + green + "," + blue);
+		// System.out.println("rgb: " + red + "," + green + "," + blue);
 
 		float[] scaledRGB = new float[3];
 
@@ -62,7 +64,7 @@ public class ColorRequestHandler extends RequestHandler {
 		scaledRGB[1] = green * RgbScale;
 		scaledRGB[2] = blue * RgbScale;
 
-		System.out.println("scaled rgb: " + Arrays.toString(scaledRGB));
+		// System.out.println("scaled rgb: " + Arrays.toString(scaledRGB));
 
 		return scaledRGB;
 	}
@@ -83,7 +85,7 @@ public class ColorRequestHandler extends RequestHandler {
 		respObj.put("color", color);
 		respObj.put("timeMs", output.timeMs);
 
-		System.out.println(String.format("reponse: %s, %s, %s", respObj.encode(), rgbJsonArray, color));
+		// System.out.println(String.format("reponse: %s, %s, %s", respObj.encode(), rgbJsonArray, color));
 
 		return respObj;
 	}

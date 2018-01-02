@@ -18,6 +18,10 @@ import org.nd4j.linalg.io.ClassPathResource;
 
 import com.daisyworks.demo.Service;
 
+/**
+ * @author troy
+ *
+ */
 public class Trainer {
 	NeuralNet nn;
 

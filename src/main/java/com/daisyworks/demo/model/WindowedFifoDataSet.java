@@ -42,12 +42,13 @@ public class WindowedFifoDataSet {
 		while (observationIdx < observationWindowSize) {
 			addFeature(f);
 		}
-		System.out.println("features: " + features);
-		System.out.println("labels: " + classifications);
+		// System.out.println("features: " + features);
+		// System.out.println("labels: " + classifications);
 	}
 
 	private void addFeature(Observation f) {
-		System.out.println(String.format("purpose: %s, observationIdx: %d\r\nobservation: %s", purpose, observationIdx % observationWindowSize, f));
+		// System.out.println(String.format("purpose: %s, observationIdx: %d\r\nobservation: %s", purpose,
+		// observationIdx % observationWindowSize, f));
 		for (int fIdx = 0; fIdx < inputFeatureCnt; fIdx++) {
 			features.putScalar(new int[] { observationIdx % observationWindowSize, fIdx }, f.features[fIdx]);
 			addLabels(f.classificationIdx);

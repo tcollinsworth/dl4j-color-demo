@@ -64,7 +64,7 @@ $(document).ready(function(){
       $("input[name='color'][value='" + data.color + "']").prop('checked', true);
       const rgb = 'rgb(' + nextColor.rgb.join(',') + ')'
       $('#testColor').css('background-color',rgb)
-      $('#inference').text(data.timeMs)
+      $('#inference').text(data.timeMs.toFixed(2))
       $('#stats').text(data.stats)
     },
     function(jqxhr, textStatus, error) {

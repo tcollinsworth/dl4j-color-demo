@@ -1,13 +1,22 @@
 
-#testColorParent {
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.testColorParent {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
 }
 
-.description {
+/*.description {
   page-break-after: always;
   flex-basis: 100%;
+}*/
+
+#latency {
+  margin-left: 3em;
+  margin-top: 0.5em;
 }
 
 #testColor {
@@ -21,9 +30,6 @@
 #testColorSubmit {
   margin-left: 1em;
   float: left;
-}
-
-#testColorSubmit {
   margin-top: 1em;
 }
 
@@ -66,4 +72,8 @@
 }
 #whiteSample {
   background-color: white;
+}
+
+#stats {
+  margin-left: 1em;
 }

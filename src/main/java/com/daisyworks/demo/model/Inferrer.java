@@ -5,6 +5,10 @@ import org.nd4j.linalg.factory.Nd4j;
 
 import com.daisyworks.demo.model.NeuralNet.Observation;
 
+/**
+ * @author troy
+ *
+ */
 public class Inferrer {
 	NeuralNet nn;
 
@@ -18,7 +22,7 @@ public class Inferrer {
 			inputs.putScalar(new int[] { 0, i }, f.features[i]);
 		}
 
-		System.out.println("infer inputs: " + inputs.toString());
+		// System.out.println("infer inputs: " + inputs.toString());
 
 		long start = System.nanoTime();
 		int[] outputs = nn.net.predict(inputs); // 512us for 1 row

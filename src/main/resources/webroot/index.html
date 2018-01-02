@@ -14,63 +14,69 @@
 
   <body>
     <hr>
-    <div id="testColorParent">
-      <div class="description">
-        Displays random color and AI/Neural Net classification.<br>
-        Select the correct color and click next to train the model.<br>
-        Your responses are randomly assigned as training or validation.<br>
-        Incorrect responsed will be learned/validated, too.<br>
-        Utilizes a windowed FIFO, so occasional incorrect classifications will decay.<br>
-        Validation occurs every 10 responses.<br>
-        Requests are serialized in this test/demo.<br>
-      </div>
-      <div id="testColor"></div>
+    <div class="testColorParent" title="Displays random color and AI inferred label.&#13;
+Starts with random black or white.&#13;
+click reload to train black and white.&#13;
+Select the matching color label.&#13;
+Click next to train the model.&#13;
+Responses are randomly added as train or test data.&#13;
+Incorrect responses are learned/validated.&#13;
+Utilizes windowed FIFO.&#13;
+Eventually incorrect responses will decay.&#13;
+All responses are serialized, wait for response.&#13;
+Comprehensive metrics are displaed for each response.">
       <div>
-        <div id="whiteSample" class="colorSample"></div>
-        <input type="radio" id="white" name="color" value="white">
-        <label for="white">white</label><br>
-        <div id="greySample" class="colorSample"></div>
-        <input type="radio" id="grey" name="color" value="grey">
-        <label for="grey">grey</label><br>
-        <div id="blackSample" class="colorSample"></div>
-        <input type="radio" id="black" name="color" value="black">
-        <label for="black">black</label><br>
-        <div id="brownSample" class="colorSample"></div>
-        <input type="radio" id="brown" name="color" value="brown">
-        <label for="brown">brown</label><br>
-        <div id="redSample" class="colorSample"></div>
-        <input type="radio" id="red" name="color" value="red">
-        <label for="red">red</label><br>
-        <div id="orangeSample" class="colorSample"></div>
-        <input type="radio" id="orange" name="color" value="orange">
-        <label for="orange">orange</label><br>
-        <div id="yellowSample" class="colorSample"></div>
-        <input type="radio" id="yellow" name="color" value="yellow">
-        <label for="yellow">yellow</label><br>
-        <div id="greenSample" class="colorSample"></div>
-        <input type="radio" id="green" name="color" value="green">
-        <label for="green">green</label><br>
-        <div id="blueSample" class="colorSample"></div>
-        <input type="radio" id="blue" name="color" value="blue">
-        <label for="blue">blue</label><br>
-        <div id="violetSample" class="colorSample"></div>
-        <input type="radio" id="violet" name="color" value="violet">
-        <label for="violet">violet</label><br>
-        <div id="pinkSample" class="colorSample"></div>
-        <input type="radio" id="pink" name="color" value="pink">
-        <label for="pink">pink</label><br>
-        <button id="testColorSubmit" type="button">Next</button>
+        <div class="testColorParent">
+          <div id="testColor"></div>
+          <div>
+            <div id="whiteSample" class="colorSample"></div>
+            <input type="radio" id="white" name="color" value="white">
+            <label for="white">&nbsp;&nbsp;0 white</label><br>
+            <div id="greySample" class="colorSample"></div>
+            <input type="radio" id="grey" name="color" value="grey">
+            <label for="grey">&nbsp;&nbsp;1 grey</label><br>
+            <div id="blackSample" class="colorSample"></div>
+            <input type="radio" id="black" name="color" value="black">
+            <label for="black">&nbsp;&nbsp;2 black</label><br>
+            <div id="brownSample" class="colorSample"></div>
+            <input type="radio" id="brown" name="color" value="brown">
+            <label for="brown">&nbsp;&nbsp;3 brown</label><br>
+            <div id="redSample" class="colorSample"></div>
+            <input type="radio" id="red" name="color" value="red">
+            <label for="red">&nbsp;&nbsp;4 red</label><br>
+            <div id="orangeSample" class="colorSample"></div>
+            <input type="radio" id="orange" name="color" value="orange">
+            <label for="orange">&nbsp;&nbsp;5 orange</label><br>
+            <div id="yellowSample" class="colorSample"></div>
+            <input type="radio" id="yellow" name="color" value="yellow">
+            <label for="yellow">&nbsp;&nbsp;6 yellow</label><br>
+            <div id="greenSample" class="colorSample"></div>
+            <input type="radio" id="green" name="color" value="green">
+            <label for="green">&nbsp;&nbsp;7 green</label><br>
+            <div id="blueSample" class="colorSample"></div>
+            <input type="radio" id="blue" name="color" value="blue">
+            <label for="blue">&nbsp;&nbsp;8 blue</label><br>
+            <div id="violetSample" class="colorSample"></div>
+            <input type="radio" id="violet" name="color" value="violet">
+            <label for="violet">&nbsp;&nbsp;9 violet</label><br>
+            <div id="pinkSample" class="colorSample"></div>
+            <input type="radio" id="pink" name="color" value="pink">
+            <label for="pink">10 pink</label><br>
+            <button id="testColorSubmit" type="button">Next</button>
+          </div>
+        </div>
+        <div id="latency">
+          Inference <span id="inference">0.824321</span> ms
+        </div>
       </div>
-      <div>
-        <ul>
-          <li>Inference <span id="inference">0.824321</span> ms</li>
-          <!-- <li>Accuracy <span id="accuracy">0.1</span></li>
-          <li>Precision <span id="precision">0.1</span></li>
-          <li>Recall <span id="recall">0.1</span></li>
-          <li>F1 Score <span id="f1score">0.1</span></li> -->
-        </ul>
-      </div>
-      <div>
+      <div title="Accuracy = Correct / Total&#13;
+Precision = True Pos / (True Pos + False Pos)&#13;
+Recall = True Pos / (True Pos + False Neg) &#13;
+F1 Score = 2*(Recall * Precision)/(Recall + Precision)&#13;
+&#13;
+Recall when FN costs more&#13;
+Precision when FP costs more&#13;
+F1 when costs are same&#13;">
         <pre id="stats"></pre>
       </div>
     </div>

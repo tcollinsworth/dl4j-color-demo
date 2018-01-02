@@ -1,5 +1,7 @@
 package com.daisyworks.demo.model;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.Arrays;
 
 import org.deeplearning4j.nn.api.Layer;
@@ -11,16 +13,72 @@ import org.deeplearning4j.nn.conf.layers.OutputLayer;
 import org.deeplearning4j.nn.multilayer.MultiLayerNetwork;
 import org.deeplearning4j.nn.weights.WeightInit;
 import org.deeplearning4j.optimize.listeners.ScoreIterationListener;
+import org.deeplearning4j.util.ModelSerializer;
 import org.nd4j.linalg.activations.Activation;
 import org.nd4j.linalg.lossfunctions.LossFunctions;
 
+/**
+ * @author troy
+ *
+ */
 public class NeuralNet {
 	private final int inputFeatureCnt;
+	private final int outputClassificationCnt;
+
+	private int iterations;
+	private float learningRate;
+
 	MultiLayerNetwork net;
 
-	public NeuralNet(int iterations, float learningRate, int inputFeatureCnt, int ouitputClassificationCnt) {
+	public NeuralNet(int iterations, float learningRate, int inputFeatureCnt, int outputClassificationCnt) {
 		this.inputFeatureCnt = inputFeatureCnt;
+		this.outputClassificationCnt = outputClassificationCnt;
 
+		this.iterations = iterations;
+		this.learningRate = learningRate;
+
+		initializeNewModel();
+	}
+
+	/**
+	 * @param filePathName
+	 *            i.e., trained_mnist_model.zip
+	 * @param saveUpdater
+	 *            allows additional training
+	 * @throws IOException
+	 */
+	public void saveModel(String filePathName, boolean saveUpdater) throws IOException {
+		File locationToSave = new File(filePathName);
+		ModelSerializer.writeModel(net, locationToSave, saveUpdater);
+	}
+
+	/**
+	 * @param filePathName
+	 *            i.e., trained_mnist_model.zip
+	 * @param saveUpdater
+	 *            allows additional training
+	 * @throws IOException
+	 */
+	public void restoreModel(String filePathName, boolean loadUpdater) throws IOException {
+		File locationToSave = new File(filePathName);
+		net = ModelSerializer.restoreMultiLayerNetwork(locationToSave, loadUpdater);
+	}
+
+	/**
+	 * @param iterations
+	 * @param learningRate
+	 */
+	public void initializeNewModel(int iterations, float learningRate) {
+		this.iterations = iterations;
+		this.learningRate = learningRate;
+
+		initializeNewModel();
+	}
+
+	/**
+	 * Create a brand new model.
+	 */
+	public void initializeNewModel() {
 		NeuralNetConfiguration.ListBuilder listBuilder = new NeuralNetConfiguration.Builder() //
 				.iterations(iterations) //
 				.learningRate(learningRate) //
@@ -42,13 +100,13 @@ public class NeuralNet {
 
 				.layer(1, new DenseLayer.Builder() //
 						.nIn(inputFeatureCnt) //
-						.nOut(ouitputClassificationCnt) //
+						.nOut(outputClassificationCnt) //
 						.name("Hidden") //
 						.build()) //
 
 				.layer(2, new OutputLayer.Builder(LossFunctions.LossFunction.NEGATIVELOGLIKELIHOOD) //
-						.nIn(ouitputClassificationCnt) //
-						.nOut(ouitputClassificationCnt) //
+						.nIn(outputClassificationCnt) //
+						.nOut(outputClassificationCnt) //
 						.name("Output") //
 						.activation(Activation.SOFTMAX) //
 						.weightInit(WeightInit.DISTRIBUTION) //
@@ -81,7 +139,7 @@ public class NeuralNet {
 		public final int classificationIdx;
 
 		/**
-		 * Only set inputs that are relevant.
+		 * Only set inputs that are relevant. Others will be set to zero.
 		 * 
 		 * @param classificationIdx
 		 * @param f

@@ -3,6 +3,10 @@ package com.daisyworks.demo;
 import io.vertx.core.json.JsonObject;
 import io.vertx.ext.web.RoutingContext;
 
+/**
+ * @author troy
+ *
+ */
 public abstract class RequestHandler {
 	protected Service service;
 	protected RoutingContext rc;

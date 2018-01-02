@@ -14,6 +14,10 @@ import com.daisyworks.demo.model.NeuralNet;
 import com.daisyworks.demo.model.Trainer;
 import com.daisyworks.demo.model.WindowedFifoDataSet;
 
+/**
+ * @author troy
+ *
+ */
 public class Service {
 	static final int PORT = 8080;
 
