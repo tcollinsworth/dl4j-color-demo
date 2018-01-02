@@ -50,6 +50,7 @@ public class Service {
 		Router router = Router.router(vertx);
 		router.route().handler(BodyHandler.create());
 		router.route(HttpMethod.POST, "/color-train-validate").blockingHandler(routingContext -> new ColorRequestHandler(routingContext, service));
+		router.route(HttpMethod.POST, "/modelAdmin").blockingHandler(routingContext -> new ModelAdminRequestHandler(routingContext, service));
 		router.route("/*").handler(StaticHandler.create().setCacheEntryTimeout(1));
 
 		vertx.createHttpServer().requestHandler(router::accept).listen(PORT, res -> {
