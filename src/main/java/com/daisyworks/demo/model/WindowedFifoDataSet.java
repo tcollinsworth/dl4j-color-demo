@@ -63,6 +63,6 @@ public class WindowedFifoDataSet {
 	}
 
 	public String toString() {
-		return String.format("row: %d, features: %s, labels: %s", observationIdx, features, classifications);
+		return String.format("purpose %s, row: %d, features: %s, labels: %s", purpose, observationIdx, features, classifications);
 	}
 }

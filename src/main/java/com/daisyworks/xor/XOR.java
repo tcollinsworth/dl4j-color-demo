@@ -1,6 +1,7 @@
 package com.daisyworks.xor;
 
-import org.deeplearning4j.eval.Evaluation;
+import java.util.Arrays;
+
 import org.deeplearning4j.nn.api.Layer;
 import org.deeplearning4j.nn.api.OptimizationAlgorithm;
 import org.deeplearning4j.nn.conf.NeuralNetConfiguration;
@@ -15,8 +16,6 @@ import org.nd4j.linalg.api.ndarray.INDArray;
 import org.nd4j.linalg.dataset.DataSet;
 import org.nd4j.linalg.factory.Nd4j;
 import org.nd4j.linalg.lossfunctions.LossFunctions;
-
-import java.util.Arrays;
 
 public class XOR {
     public static void main(String[] args) {
