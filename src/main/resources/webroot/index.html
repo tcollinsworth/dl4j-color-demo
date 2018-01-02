@@ -28,7 +28,7 @@ Comprehensive metrics are displaed for each response.">
       <div>
         <div class="testColorParent">
           <div id="testColor"></div>
-          <div>
+          <div id="testColorLabels">
             <div id="whiteSample" class="colorSample"></div>
             <input type="radio" id="white" name="color" value="white">
             <label for="white">&nbsp;&nbsp;0 white</label><br>
@@ -68,6 +68,24 @@ Comprehensive metrics are displaed for each response.">
         <div id="latency">
           Inference <span id="inference">0.824321</span> ms
         </div>
+      </div>
+      <div id="networkDiagram">
+        <label id="rIn" class="rgbIn">R <span id="rInt">255</span> <span id="rScaled" class="scaled">0.99</span></label>
+        <label id="gIn" class="rgbIn">G <span id="gInt">255</span> <span id="gScaled" class="scaled">0.99</span></label>
+        <label id="bIn" class="rgbIn">B <span id="bInt">255</span> <span id="bScaled" class="scaled">0.99</span></label>
+
+        <label id="out0" class="out">0 white<span id="out0val" class="outval">0.00</span></label>
+        <label id="out1" class="out">1 grey<span id="out1val" class="outval">0.00</span></label>
+        <label id="out2" class="out">2 black<span id="out2val" class="outval">0.00</span></label>
+        <label id="out3" class="out">3 brown<span id="out3val" class="outval">0.00</span></label>
+        <label id="out4" class="out">4 red<span id="out4val" class="outval">0.00</span></label>
+        <label id="out5" class="out">5 orange<span id="out5val" class="outval">0.00</span></label>
+        <label id="out6" class="out">6 yellow<span id="out6val" class="outval">0.00</span></label>
+        <label id="out7" class="out">7 green<span id="out7val" class="outval">0.00</span></label>
+        <label id="out8" class="out">8 blue<span id="out8val" class="outval">0.00</span></label>
+        <label id="out9" class="out">9 violet<span id="out9val" class="outval">0.00</span></label>
+        <label id="out10" class="out">10 pink<span id="out10val" class="outval">0.00</span></label>
+
       </div>
       <div title="Accuracy = Correct / Total&#13;
 Precision = True Pos / (True Pos + False Pos)&#13;

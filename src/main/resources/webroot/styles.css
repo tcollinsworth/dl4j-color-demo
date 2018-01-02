@@ -27,6 +27,10 @@ body {
   float: left;
 }
 
+#testColorLabels {
+  margin-right: 2em;
+}
+
 #testColorSubmit {
   margin-left: 1em;
   float: left;
@@ -72,6 +76,114 @@ body {
 }
 #whiteSample {
   background-color: white;
+}
+
+#networkDiagram {
+  position: relative;
+  background-image: url("5-11nn.png");
+  height: 21.2em;
+  width: 22em;
+}
+
+.rgbIn {
+  font-size: 0.8em;
+}
+
+#rIn {
+  position: absolute;
+  top: 12.2em;
+}
+
+#gIn {
+  position: absolute;
+  top: 14.2em;
+}
+
+#bIn {
+  position: absolute;
+  top: 16.3em;
+}
+
+.scaled {
+  position: absolute;
+  top: 1em;
+  left: .7em;
+}
+
+.out {
+  font-size: 0.8em;
+}
+
+.outval {
+  position: absolute;
+  top: 1em;
+  left: .7em;
+}
+
+#out0 {
+  position: absolute;
+  top: 3.5em;
+  left: 22em;
+}
+
+#out1 {
+  position: absolute;
+  top: 5.6em;
+  left: 22em;
+}
+
+#out2 {
+  position: absolute;
+  top: 7.7em;
+  left: 22em;
+}
+
+#out3 {
+  position: absolute;
+  top: 9.8em;
+  left: 22em;
+}
+
+#out4 {
+  position: absolute;
+  top: 11.9em;
+  left: 22em;
+}
+
+#out5 {
+  position: absolute;
+  top: 14.0em;
+  left: 22em;
+}
+
+#out6 {
+  position: absolute;
+  top: 16.1em;
+  left: 22em;
+}
+
+#out7 {
+  position: absolute;
+  top: 18.2em;
+  left: 22em;
+}
+
+#out8 {
+  position: absolute;
+  top: 20.3em;
+  left: 22em;
+}
+
+#out9 {
+  position: absolute;
+  top: 22.4em;
+  left: 22em;
+}
+
+#out10 {
+  position: absolute;
+  top: 24.5em;
+  left: 22em;
 }
 
 #stats {

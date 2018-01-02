@@ -25,6 +25,11 @@ public class Inferrer {
 		// System.out.println("infer inputs: " + inputs.toString());
 
 		long start = System.nanoTime();
+
+		INDArray labelProbabilities = nn.net.output(inputs);
+		System.out.println(labelProbabilities);
+		// TODO return these probabilities in response
+
 		int[] outputs = nn.net.predict(inputs); // 512us for 1 row
 		// System.out.println(outputs.length);
 		// System.out.println(Arrays.toString(outputs));
