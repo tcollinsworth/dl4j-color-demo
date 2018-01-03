@@ -62,18 +62,22 @@ Comprehensive metrics are displaed for each response.">
             <div id="pinkSample" class="colorSample"></div>
             <input type="radio" id="pink" name="color" value="pink">
             <label for="pink">10 pink</label><br>
-            <button id="train" type="button">Train</button>
-            <button id="eval" type="button">Eval</button>
+            <button id="train" type="button" title="Randomly adds current color and label to train or eval DataSet&#13;
+Trains model on last 100 training observations&#13;
+Evaluates model with last 100 eval observations">Train</button>
+            <button id="eval" type="button"title="Evaluates model with last 100 eval observations&#13;
+Does not train model or update training or eval DataSets">Eval</button>
           </div>
         </div>
         <div id="latency">
           Inference <span id="inference">0.824321</span> ms
         </div>
         <div class="modelAdmin">
-          <button id="save" type="button">Save</button><button id="load" type="button">Load</button><input id="filename" type="test" placeholder="troys-model.zip"/>
+          <button id="save" type="button" title="Saves current trained model">Save</button><button id="load" type="button" title="Loads trained model">Load</button><input id="filename" type="test" placeholder="troys-model.zip"/>
         </div>
         <div class="modelAdmin">
-          <button id="reset" type="button">Reset</button>
+          <button id="reset" type="button" title="Replaces current model with new untrained model&#13;
+Clears training & validation datasets">Reset</button>
         </div>
       </div>
       <div id="networkDiagram" title="Inputs are scaled to 0-1.&#13;

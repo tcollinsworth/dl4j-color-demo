@@ -36,14 +36,15 @@ public class Service {
 
 	public static final int observationWindowSize = 100;
 
-	public WindowedFifoDataSet trainColoData = new WindowedFifoDataSet("train", observationWindowSize, inputFeatureCnt, outputClassificationCnt);
-	public WindowedFifoDataSet testColorData = new WindowedFifoDataSet("test", observationWindowSize, inputFeatureCnt, outputClassificationCnt);
+	public WindowedFifoDataSet trainColoData;
+	public WindowedFifoDataSet testColorData;
 
 	public static void main(String[] args) throws IOException, InterruptedException {
 		// for development, also requires staticHandler.setCacheEntryTimeout(1) and browser cache disable
 		System.setProperty("vertx.disableFileCaching", "true");
 
 		Service service = new Service();
+		service.createNewDataSets();
 		// service.trainer.fit();
 
 		Vertx vertx = Vertx.vertx();
@@ -61,5 +62,10 @@ public class Service {
 				System.exit(-1);
 			}
 		});
+	}
+
+	public void createNewDataSets() {
+		trainColoData = new WindowedFifoDataSet("train", observationWindowSize, inputFeatureCnt, outputClassificationCnt);
+		testColorData = new WindowedFifoDataSet("test", observationWindowSize, inputFeatureCnt, outputClassificationCnt);
 	}
 }
