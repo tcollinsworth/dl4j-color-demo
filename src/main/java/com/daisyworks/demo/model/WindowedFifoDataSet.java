@@ -15,7 +15,7 @@ public class WindowedFifoDataSet {
 	private final String purpose;
 	private final int observationWindowSize;
 	private final int inputFeatureCnt;
-	private final int outputClassificationCnt;
+	// private final int outputClassificationCnt;
 	private int observationIdx = 0;
 	public final INDArray features;
 	public final INDArray classifications;
@@ -29,7 +29,7 @@ public class WindowedFifoDataSet {
 		this.purpose = purpose;
 		this.observationWindowSize = observationWindowSize;
 		this.inputFeatureCnt = inputFeatureCnt;
-		this.outputClassificationCnt = outputClassificationCnt;
+		// this.outputClassificationCnt = outputClassificationCnt;
 
 		features = Nd4j.zeros(observationWindowSize, inputFeatureCnt);
 		classifications = Nd4j.zeros(observationWindowSize, outputClassificationCnt);

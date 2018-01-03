@@ -35,15 +35,18 @@ public class ColorRequestHandler extends RequestHandler {
 		Observation observation = service.nn.new Observation(classificationIdx, ColorDiscriminator, scaledRGB[0], scaledRGB[1], scaledRGB[2], 0);
 		// System.out.println(String.format("observation, %s, %s", rgbJsonArray, color));
 
-		// randomly assign to training or test/validation windowed set
-		if (Math.round(Math.random()) == 0) {
-			service.trainColoData.addObservation(observation);
-		} else {
-			service.testColorData.addObservation(observation);
-		}
-		// service.trainColoData.addObservation(observation);
+		boolean train = bodyJson.getBoolean("train");
+		if (train) {
+			// randomly assign to training or test/validation windowed set
+			if (Math.round(Math.random()) == 0) {
+				service.trainColoData.addObservation(observation);
+			} else {
+				service.testColorData.addObservation(observation);
+			}
 
-		service.trainer.train(service);
+			service.trainer.train(service);
+		}
+
 		String stats = service.evaluator.grade(service);
 
 		JsonObject respObj = getColorInference(service, bodyJson);

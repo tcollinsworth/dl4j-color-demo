@@ -1,4 +1,7 @@
 $(document).ready(function(){
+  const train = true
+  const eval = false
+
   const rgbScale = 1/255
   const curRGB = []
 
@@ -8,7 +11,7 @@ $(document).ready(function(){
   $('#testColor').css('background-color',startColor)
   $("input[name='color'][value='" + startColorLabel + "']").prop('checked', true);
   getCurColor()
-  postObservationAndInferNextColor({rgb: curRGB})
+  postObservationAndInferNextColor({rgb: curRGB}, train)
 
   function setColorClassification(data, textStatus, jqxhr) {
     console.log(JSON.stringify(jqxhr, null, '  '))
@@ -39,23 +42,32 @@ $(document).ready(function(){
     postData(Config.getColorInferenceUrl(), data, successCB, failureCB)
   }
 
-  $('#testColorSubmit').click(function() {
+  $('#train').click(function() {
+    trainEval(train)
+  })
+
+  $('#eval').click(function() {
+    trainEval(eval)
+  })
+
+  function trainEval(train) {
     const r = Math.round(Math.random() * 255)
     const g = Math.round(Math.random() * 255)
     const b = Math.round(Math.random() * 255)
     const color = 'rgb(' + r + ',' + g + ',' + b + ')'
-    //FIXME changing color randomly before posting observation
+    //changing color randomly before posting observation
     //gen new color and send with post observation for inference, get back color prediction
     //set new color and prediction in radio button
-    postObservationAndInferNextColor({rgb: [r, g, b]})
-  })
+    postObservationAndInferNextColor({rgb: [r, g, b]}, train)
+  }
 
-  function postObservationAndInferNextColor(nextColor) {
+  function postObservationAndInferNextColor(nextColor, train) {
     getCurColor()
     let color = $('input[name=color]:checked').val()
     console.log(color)
 
     const data = {
+      train,
       color,
       rgb: curRGB,
       nextColor
@@ -76,22 +88,27 @@ $(document).ready(function(){
       $('#inference').text(data.timeMs.toFixed(2))
       $('#stats').text(data.stats)
 
-      $('#out0val').text(data.colorProbabilities[0].toFixed(3))
-      $('#out1val').text(data.colorProbabilities[1].toFixed(3))
-      $('#out2val').text(data.colorProbabilities[2].toFixed(3))
-      $('#out3val').text(data.colorProbabilities[3].toFixed(3))
-      $('#out4val').text(data.colorProbabilities[4].toFixed(3))
-      $('#out5val').text(data.colorProbabilities[5].toFixed(3))
-      $('#out6val').text(data.colorProbabilities[6].toFixed(3))
-      $('#out7val').text(data.colorProbabilities[7].toFixed(3))
-      $('#out8val').text(data.colorProbabilities[8].toFixed(3))
-      $('#out9val').text(data.colorProbabilities[9].toFixed(3))
-      $('#out10val').text(data.colorProbabilities[10].toFixed(3))
+      for (i=0; i<11; i++) {
+        $('#out' + i + 'val').text(data.colorProbabilities[i].toFixed(3))
+        $('#out' + i + 'line').width(Math.round(data.colorProbabilities[i]*50))
+      }
     },
     function(jqxhr, textStatus, error) {
       console.log("Error, retry\r\n" + JSON.stringify(jqxhr, null, '  '))
     })
   }
+
+  $('#reset').click(function() {
+    postData(Config.getModelAdminUrl(), {resetModel: true})
+  })
+
+  $('#save').click(function() {
+    postData(Config.getModelAdminUrl(), {saveModel: true, modelFilename: $('#filename').val()})
+  })
+
+  $('#load').click(function() {
+    postData(Config.getModelAdminUrl(), {loadModel: true, modelFilename: $('#filename').val()})
+  })
 
   function postData(url, data, successCB, failureCB) {
     $.ajax({

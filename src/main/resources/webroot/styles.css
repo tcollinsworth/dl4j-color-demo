@@ -19,6 +19,10 @@ body {
   margin-top: 0.5em;
 }
 
+.modelAdmin {
+  margin-top: 0.5em;
+}
+
 #testColor {
   border: 1px solid black;
   background-color: rgb(255,255,255);
@@ -31,8 +35,14 @@ body {
   margin-right: 2em;
 }
 
-#testColorSubmit {
+#train {
   margin-left: 1em;
+  float: left;
+  margin-top: 1em;
+}
+
+#eval {
+  margin-left: 0.25em;
   float: left;
   margin-top: 1em;
 }
@@ -184,6 +194,13 @@ body {
   position: absolute;
   top: 24.5em;
   left: 22em;
+}
+
+.outLine {
+  height: 1px;
+  width: 0px;
+  margin-top: -2px;
+  border-bottom: 1px solid brown;
 }
 
 #stats {

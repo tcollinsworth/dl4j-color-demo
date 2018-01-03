@@ -36,9 +36,14 @@ const Config = (function() {
     return urlPrefix + 'color-train-validate'
   }
 
+  function getModelAdminUrl() {
+    return urlPrefix + 'modelAdmin'
+  }
+
   return {
     getBaseUrl,
     getColorInferenceUrl,
-    getColorTrainValidateUrl
+    getColorTrainValidateUrl,
+    getModelAdminUrl
   }
 })()

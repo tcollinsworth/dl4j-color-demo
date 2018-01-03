@@ -62,11 +62,18 @@ Comprehensive metrics are displaed for each response.">
             <div id="pinkSample" class="colorSample"></div>
             <input type="radio" id="pink" name="color" value="pink">
             <label for="pink">10 pink</label><br>
-            <button id="testColorSubmit" type="button">Next</button>
+            <button id="train" type="button">Train</button>
+            <button id="eval" type="button">Eval</button>
           </div>
         </div>
         <div id="latency">
           Inference <span id="inference">0.824321</span> ms
+        </div>
+        <div class="modelAdmin">
+          <button id="save" type="button">Save</button><button id="load" type="button">Load</button><input id="filename" type="test" placeholder="troys-model.zip"/>
+        </div>
+        <div class="modelAdmin">
+          <button id="reset" type="button">Reset</button>
         </div>
       </div>
       <div id="networkDiagram" title="Inputs are scaled to 0-1.&#13;
@@ -80,17 +87,17 @@ Total parameters: 228">
         <label id="gIn" class="rgbIn">G <span id="gInt">255</span> <span id="gScaled" class="scaled">0.99</span></label>
         <label id="bIn" class="rgbIn">B <span id="bInt">255</span> <span id="bScaled" class="scaled">0.99</span></label>
 
-        <label id="out0" class="out">0 white<span id="out0val" class="outval">0.00</span></label>
-        <label id="out1" class="out">1 grey<span id="out1val" class="outval">0.00</span></label>
-        <label id="out2" class="out">2 black<span id="out2val" class="outval">0.00</span></label>
-        <label id="out3" class="out">3 brown<span id="out3val" class="outval">0.00</span></label>
-        <label id="out4" class="out">4 red<span id="out4val" class="outval">0.00</span></label>
-        <label id="out5" class="out">5 orange<span id="out5val" class="outval">0.00</span></label>
-        <label id="out6" class="out">6 yellow<span id="out6val" class="outval">0.00</span></label>
-        <label id="out7" class="out">7 green<span id="out7val" class="outval">0.00</span></label>
-        <label id="out8" class="out">8 blue<span id="out8val" class="outval">0.00</span></label>
-        <label id="out9" class="out">9 violet<span id="out9val" class="outval">0.00</span></label>
-        <label id="out10" class="out">10 pink<span id="out10val" class="outval">0.00</span></label>
+        <label id="out0" class="out">0 white<div id="out0line" class="outLine"></div><span id="out0val" class="outval">0.00</span></label>
+        <label id="out1" class="out">1 grey<div id="out1line" class="outLine"></div><span id="out1val" class="outval">0.00</span></label>
+        <label id="out2" class="out">2 black<div id="out2line" class="outLine"></div><span id="out2val" class="outval">0.00</span></label>
+        <label id="out3" class="out">3 brown<div id="out3line" class="outLine"></div><span id="out3val" class="outval">0.00</span></label>
+        <label id="out4" class="out">4 red<div id="out4line" class="outLine"></div><span id="out4val" class="outval">0.00</span></label>
+        <label id="out5" class="out">5 orange<div id="out5line" class="outLine"></div><span id="out5val" class="outval">0.00</span></label>
+        <label id="out6" class="out">6 yellow<div id="out6line" class="outLine"></div><span id="out6val" class="outval">0.00</span></label>
+        <label id="out7" class="out">7 green<div id="out7line" class="outLine"></div><span id="out7val" class="outval">0.00</span></label>
+        <label id="out8" class="out">8 blue<div id="out8line" class="outLine"></div><span id="out8val" class="outval">0.00</span></label>
+        <label id="out9" class="out">9 violet<div id="out9line" class="outLine"></div><span id="out9val" class="outval">0.00</span></label>
+        <label id="out10" class="out">10 pink<div id="out10line" class="outLine"></div><span id="out10val" class="outval">0.00</span></label>
 
       </div>
       <div title="Accuracy = Correct / Total&#13;
