@@ -1,5 +1,6 @@
 package com.daisyworks.demo;
 
+import io.vertx.core.json.JsonObject;
 import io.vertx.ext.web.RoutingContext;
 
 import java.io.IOException;
@@ -19,7 +20,11 @@ public class ModelAdminRequestHandler extends RequestHandler {
 		String modelFilename = bodyJson.getString("modelFilename", null);
 
 		try {
-			if (saveModel && modelFilename != null && !modelFilename.isEmpty()) {
+			if (saveModel) {
+				if (modelFilename == null || modelFilename.isEmpty()) {
+					rc.response().setStatusCode(500).end("no filename");
+					return;
+				}
 				service.nn.saveModel(modelFilename, true);
 				System.out.println("Saved model: " + modelFilename);
 			}
@@ -30,13 +35,17 @@ public class ModelAdminRequestHandler extends RequestHandler {
 				System.out.println("Reset model");
 			}
 
-			if (loadModel && modelFilename != null && !modelFilename.isEmpty()) {
+			if (loadModel) {
+				if (modelFilename == null || modelFilename.isEmpty()) {
+					rc.response().setStatusCode(500).end("no filename");
+					return;
+				}
 				service.createNewDataSets();
 				service.nn.restoreModel(modelFilename, true);
 				System.out.println("Loaded model: " + modelFilename);
 			}
 
-			rc.response().end();
+			rc.response().end(new JsonObject().encode());
 		} catch (IOException e) {
 			e.printStackTrace();
 			rc.response().setStatusCode(500).end(e.getMessage());

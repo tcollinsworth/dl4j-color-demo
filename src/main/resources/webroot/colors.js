@@ -80,34 +80,52 @@ $(document).ready(function(){
     $('#gScaled').text((nextColor.rgb[1]*rgbScale).toFixed(2))
     $('#bScaled').text((nextColor.rgb[2]*rgbScale).toFixed(2))
 
-    postData(Config.getColorTrainValidateUrl(), data, function(data, textStatus, jqxhr) {
-      console.log(data)
-      $("input[name='color'][value='" + data.color + "']").prop('checked', true);
-      const rgb = 'rgb(' + nextColor.rgb.join(',') + ')'
-      $('#testColor').css('background-color',rgb)
-      $('#inference').text(data.timeMs.toFixed(2))
-      $('#stats').text(data.stats)
+    postData(Config.getColorTrainValidateUrl(), data,
+      function(data, textStatus, jqxhr) {
+        console.log(data)
+        $("input[name='color'][value='" + data.color + "']").prop('checked', true);
+        const rgb = 'rgb(' + nextColor.rgb.join(',') + ')'
+        $('#testColor').css('background-color',rgb)
+        $('#inference').text(data.timeMs.toFixed(2))
+        $('#stats').text(data.stats)
 
-      for (i=0; i<11; i++) {
-        $('#out' + i + 'val').text(data.colorProbabilities[i].toFixed(3))
-        $('#out' + i + 'line').width(Math.round(data.colorProbabilities[i]*50))
-      }
-    },
-    function(jqxhr, textStatus, error) {
-      console.log("Error, retry\r\n" + JSON.stringify(jqxhr, null, '  '))
-    })
+        for (i=0; i<11; i++) {
+          $('#out' + i + 'val').text(data.colorProbabilities[i].toFixed(3))
+          $('#out' + i + 'line').width(Math.round(data.colorProbabilities[i]*50))
+        }
+      },
+      function(jqxhr, textStatus, error) {
+        alert("Error, retry\r\n" + JSON.stringify(jqxhr, null, '  '))
+      })
   }
 
   $('#reset').click(function() {
-    postData(Config.getModelAdminUrl(), {resetModel: true})
+    postData(Config.getModelAdminUrl(), {resetModel: true},
+      function(data, textStatus, jqxhr) {
+        alert("Successfully reset model and cleared training and eval DataSets")
+      },
+      function(jqxhr, textStatus, error) {
+        alert("Error resetting model\r\n" +  JSON.stringify(jqxhr, null, '  '))
+      })
   })
 
   $('#save').click(function() {
-    postData(Config.getModelAdminUrl(), {saveModel: true, modelFilename: $('#filename').val()})
+    postData(Config.getModelAdminUrl(), {saveModel: true, modelFilename: $('#filename').val()},
+      function(data, textStatus, jqxhr) {
+        alert("Successfully saved model " + $('#filename').val())
+      },
+      function(jqxhr, textStatus, error) {
+        alert("Error saving model\r\n" +  JSON.stringify(jqxhr, null, '  '))
+      })
   })
 
   $('#load').click(function() {
-    postData(Config.getModelAdminUrl(), {loadModel: true, modelFilename: $('#filename').val()})
+    postData(Config.getModelAdminUrl(), {loadModel: true, modelFilename: $('#filename').val()},
+      function(data, textStatus, jqxhr) {
+        alert("Successfully loaded model " + $('#filename').val())
+      }, function(jqxhr, textStatus, error) {
+        alert("Error loading model\r\n" +  JSON.stringify(jqxhr, null, '  '))
+      })
   })
 
   function postData(url, data, successCB, failureCB) {
