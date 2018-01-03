@@ -15,6 +15,11 @@ import com.daisyworks.demo.model.Trainer;
 import com.daisyworks.demo.model.WindowedFifoDataSet;
 
 /**
+ * TODO
+ * Add save/load eval/train window
+ * Add color sliders
+ * Remove unrelated code
+ * 
  * @author troy
  *
  */
