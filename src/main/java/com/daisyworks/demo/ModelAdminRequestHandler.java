@@ -25,6 +25,10 @@ public class ModelAdminRequestHandler extends RequestHandler {
 			}
 
 			if (resetModel) {
+				// *********************************************
+				// TODO clear the datasets
+				// *********************************************
+				// Add UI popups on success/failure
 				service.nn.initializeNewModel();
 				System.out.println("Reset model");
 			}
