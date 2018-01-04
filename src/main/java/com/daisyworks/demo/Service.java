@@ -8,6 +8,8 @@ import io.vertx.ext.web.handler.StaticHandler;
 
 import java.io.IOException;
 
+import org.nd4j.linalg.factory.Nd4j;
+
 import com.daisyworks.demo.model.Evaluator;
 import com.daisyworks.demo.model.Inferrer;
 import com.daisyworks.demo.model.NeuralNet;
@@ -15,10 +17,7 @@ import com.daisyworks.demo.model.Trainer;
 import com.daisyworks.demo.model.WindowedFifoDataSet;
 
 /**
- * TODO
- * Add save/load train/test windowedFifoDataSet
- * Add color sliders
- * Remove unrelated code
+ * TODO Add save/load train/test windowedFifoDataSet Add color sliders Remove unrelated code
  * 
  * @author troy
  *
@@ -72,5 +71,16 @@ public class Service {
 	public void createNewDataSets() {
 		trainColoData = new WindowedFifoDataSet("train", observationWindowSize, inputFeatureCnt, outputClassificationCnt);
 		testColorData = new WindowedFifoDataSet("test", observationWindowSize, inputFeatureCnt, outputClassificationCnt);
+	}
+
+	public void saveObservationData(String prefix, String modelFilename, WindowedFifoDataSet observationData) {
+		Nd4j.writeTxt(observationData.features, prefix + "-features-" + modelFilename + ".txt");
+		Nd4j.writeTxt(observationData.classifications, prefix + "-classifications-" + modelFilename + ".txt");
+	}
+
+	public void loadObservationData(String prefix, String modelFilename, WindowedFifoDataSet observationData) {
+		observationData.features = Nd4j.readTxt(prefix + "-features-" + modelFilename + ".txt");
+		observationData.classifications = Nd4j.readTxt(prefix + "-classifications-" + modelFilename + ".txt");
+
 	}
 }

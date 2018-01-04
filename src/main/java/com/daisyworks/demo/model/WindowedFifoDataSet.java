@@ -17,8 +17,8 @@ public class WindowedFifoDataSet {
 	private final int inputFeatureCnt;
 	// private final int outputClassificationCnt;
 	private int observationIdx = 0;
-	public final INDArray features;
-	public final INDArray classifications;
+	public INDArray features;
+	public INDArray classifications;
 
 	/**
 	 * @param window

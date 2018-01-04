@@ -25,7 +25,9 @@ public class ModelAdminRequestHandler extends RequestHandler {
 					rc.response().setStatusCode(500).end("no filename");
 					return;
 				}
-				service.nn.saveModel(modelFilename, true);
+				service.nn.saveModel(modelFilename + ".zip", true);
+				service.saveObservationData("train", modelFilename, service.trainColoData);
+				service.saveObservationData("test", modelFilename, service.testColorData);
 				System.out.println("Saved model: " + modelFilename);
 			}
 
@@ -41,7 +43,9 @@ public class ModelAdminRequestHandler extends RequestHandler {
 					return;
 				}
 				service.createNewDataSets();
-				service.nn.restoreModel(modelFilename, true);
+				service.nn.restoreModel(modelFilename + ".zip", true);
+				service.loadObservationData("train", modelFilename, service.trainColoData);
+				service.loadObservationData("test", modelFilename, service.testColorData);
 				System.out.println("Loaded model: " + modelFilename);
 			}
 
