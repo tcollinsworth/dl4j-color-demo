@@ -32,7 +32,7 @@ body {
 }
 
 #testColorLabels {
-  margin-right: 2em;
+  margin-right: 1em;
 }
 
 #train {
@@ -86,6 +86,62 @@ body {
 }
 #whiteSample {
   background-color: white;
+}
+
+#sliders {
+  height: 255px;
+  width: 100px;
+  position: relative;
+  margin-right: 1em;
+  /*border: 1px solid black;*/
+}
+
+.sliderHolder {
+  width: 20px;
+  height: 255px;
+  position: absolute;
+  bottom: -1px;
+  border: 1px solid black;
+}
+
+.slider {
+  width: 20px;
+  position: absolute;
+  bottom: 0;
+}
+
+#rSliderHolder {
+  left: 9px;
+}
+
+#rSlider {
+  background: red;
+  height: 10px;
+  left: 10px;
+}
+
+#gSliderHolder {
+  left: 39px;
+}
+
+#gSlider {
+  background: green;
+  height: 20px;
+  left: 40px;
+}
+
+#bSliderHolder {
+  left: 69px;
+}
+
+#bSlider {
+  background: blue;
+  height: 30px;
+  left: 70px;
+}
+
+.sliderLabel {
+  margin-left: 14.5px
 }
 
 #networkDiagram {
@@ -200,7 +256,7 @@ body {
   height: 1px;
   width: 0px;
   margin-top: -2px;
-  border-bottom: 1px solid brown;
+  border-bottom: 2px solid brown;
 }
 
 #stats {
