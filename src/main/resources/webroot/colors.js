@@ -139,4 +139,55 @@ $(document).ready(function(){
     .done(successCB)
     .fail(failureCB);
   }
+
+  const sliders = {
+    rDown: false,
+    gDown: false,
+    bDown: false,
+  }
+
+//handle mouse out as mouseup
+  $('.sliderHolder').mousedown(function(event) {
+    const slider = this.id.substring(0,1)
+    sliders[slider + 'Down'] = true
+    const color = 255-event.offsetY
+    $('#' + slider + 'Slider').height(color)
+    setColor(slider, color)
+  })
+
+  $('.sliderHolder').mousemove(function(event) {
+    const slider = this.id.substring(0,1)
+    if (!sliders[slider + 'Down']) return
+    const color = 255-event.offsetY
+    $('#' + slider + 'Slider').height(color)
+    setColor(slider, color)
+  })
+
+  $('.sliderHolder').mouseup(function(event) {
+    sliders[this.id.substring(0,1) + 'Down'] = false
+  })
+
+  $('.sliderHolder').mouseout(function(event) {
+    sliders[this.id.substring(0,1) + 'Down'] = false
+  })
+
+  function setColor(slider, color) {
+    switch(slider) {
+      case 'r':
+        curRGB[0] = color
+        break
+      case 'g':
+        curRGB[1] = color
+        break
+      case 'b':
+        curRGB[2] = color
+        break
+    }
+    const newColor = 'rgb(' + curRGB[0] + ',' + curRGB[1] + ',' + curRGB[2] + ')'
+    $('#testColor').css('background-color', newColor)
+    //TODO set net input colors
+    //TODO on mouse up or mousout eval
+    //TODO fix mouse click/out race condition
+    console.log(curRGB)
+  }
 })
