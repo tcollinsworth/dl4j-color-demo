@@ -11,6 +11,7 @@ $(document).ready(function(){
   $('#testColor').css('background-color',startColor)
   $("input[name='color'][value='" + startColorLabel + "']").prop('checked', true);
   getCurColor()
+  setSliderColor(curRGB)
   postObservationAndInferNextColor({rgb: curRGB}, train)
 
   function setColorClassification(data, textStatus, jqxhr) {
@@ -70,7 +71,7 @@ $(document).ready(function(){
       train,
       color,
       rgb: curRGB,
-      nextColor
+      nextColor,
     }
 
     $('#rInt').text(nextColor.rgb[0])
@@ -93,6 +94,9 @@ $(document).ready(function(){
           $('#out' + i + 'val').text(data.colorProbabilities[i].toFixed(3))
           $('#out' + i + 'line').width(Math.round(data.colorProbabilities[i]*50))
         }
+
+        getCurColor()
+        setSliderColor(curRGB)
       },
       function(jqxhr, textStatus, error) {
         alert("Error, retry\r\n" + JSON.stringify(jqxhr, null, '  '))
@@ -141,14 +145,17 @@ $(document).ready(function(){
   }
 
   const sliders = {
+    changed: false,
     rDown: false,
     gDown: false,
     bDown: false,
+    curSlider: 'none',
   }
 
-//handle mouse out as mouseup
   $('.sliderHolder').mousedown(function(event) {
+    event.preventDefault()
     const slider = this.id.substring(0,1)
+    sliders.curSlider = slider
     sliders[slider + 'Down'] = true
     const color = 255-event.offsetY
     $('#' + slider + 'Slider').height(color)
@@ -156,38 +163,63 @@ $(document).ready(function(){
   })
 
   $('.sliderHolder').mousemove(function(event) {
+    event.preventDefault()
     const slider = this.id.substring(0,1)
-    if (!sliders[slider + 'Down']) return
-    const color = 255-event.offsetY
+    if (event.buttons == 1 && sliders.curSlider === slider) {
+      sliders[slider + 'Down'] = true
+    } else {
+      sliders[slider + 'Down'] = false
+      return
+    }
+    const color = Math.min(255 - event.offsetY, 255)
     $('#' + slider + 'Slider').height(color)
     setColor(slider, color)
+    sliders.changed = true
   })
 
-  $('.sliderHolder').mouseup(function(event) {
-    sliders[this.id.substring(0,1) + 'Down'] = false
+  $('body').mouseup(function(event) {
+    event.preventDefault()
+    const slider = this.id.substring(0,1)
+    sliders[slider + 'Down'] = false
+    if (sliders.changed) {
+      sliders.changed = false
+      const nextColor = { rgb: curRGB } //not changing
+      const train = false //not training
+      postObservationAndInferNextColor(nextColor, train)
+    }
   })
 
   $('.sliderHolder').mouseout(function(event) {
-    sliders[this.id.substring(0,1) + 'Down'] = false
+    event.preventDefault()
+    const slider = this.id.substring(0,1)
+    sliders[slider + 'Down'] = false
   })
+
+  function setSliderColor(curRGB) {
+    $('#rSlider').height(curRGB[0])
+    $('#gSlider').height(curRGB[1])
+    $('#bSlider').height(curRGB[2])
+  }
 
   function setColor(slider, color) {
     switch(slider) {
       case 'r':
         curRGB[0] = color
+        $('#' + slider + 'Int').text(curRGB[0])
+        $('#' + slider + 'Scaled').text((curRGB[0]*rgbScale).toFixed(2))
         break
       case 'g':
         curRGB[1] = color
+        $('#' + slider + 'Int').text(curRGB[1])
+        $('#' + slider + 'Scaled').text((curRGB[1]*rgbScale).toFixed(2))
         break
       case 'b':
         curRGB[2] = color
+        $('#' + slider + 'Int').text(curRGB[2])
+        $('#' + slider + 'Scaled').text((curRGB[2]*rgbScale).toFixed(2))
         break
     }
     const newColor = 'rgb(' + curRGB[0] + ',' + curRGB[1] + ',' + curRGB[2] + ')'
     $('#testColor').css('background-color', newColor)
-    //TODO set net input colors
-    //TODO on mouse up or mousout eval
-    //TODO fix mouse click/out race condition
-    console.log(curRGB)
   }
 })
