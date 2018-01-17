@@ -36,8 +36,9 @@ public class Inferrer {
 		// System.out.println(outputs.length);
 		// System.out.println(Arrays.toString(outputs));
 		// System.out.println(nn.net.summary());
-		long timeUs = System.nanoTime() - start;
-		float timeMs = ((float) timeUs) / 1000000;
+		long timeNs = System.nanoTime() - start;
+		// System.out.println(timeNs);
+		float timeMs = ((float) timeNs) / 1000000;
 
 		return new Output(outputs, getList(classificationProbabilities), timeMs);
 	}
